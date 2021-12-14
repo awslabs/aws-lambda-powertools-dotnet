@@ -326,8 +326,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../logger/" class="md-nav__link">
-        Logger
+      <a href="../logging/" class="md-nav__link">
+        Logging
       </a>
     </li>
   
@@ -670,25 +670,23 @@
 <p>Example using AWS Serverless Application Model (SAM)</p>
 </blockquote>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">template.yml</label><div class="tabbed-content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">Resources</span><span class="p">:</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nt">Resources</span><span class="p">:</span>
   <span class="nt">HelloWorldFunction</span><span class="p">:</span>
     <span class="nt">Type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">AWS::Serverless::Function</span> 
       <span class="l l-Scalar l-Scalar-Plain">Properties</span><span class="p p-Indicator">:</span>
-        <span class="nt">Runtime</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dotnetcore3.1</span>
         <span class="l l-Scalar l-Scalar-Plain">...</span>
-        <span class="nt">Environment</span><span class="p">:</span> 
+        <span class="l l-Scalar l-Scalar-Plain">Environment</span><span class="p p-Indicator">:</span> 
           <span class="nt">Variables</span><span class="p">:</span>
-<span class="hll">          <span class="nt">POWERTOOLS_SERVICE_NAME</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Payment</span>
-</span><span class="hll">          <span class="nt">POWERTOOLS_METRICS_NAMESPACE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ServerlessAirline</span>
+            <span class="nt">POWERTOOLS_SERVICE_NAME</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Payment</span>
+<span class="hll">            <span class="nt">POWERTOOLS_METRICS_NAMESPACE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ServerlessAirline</span>
 </span></code></pre></div>
 </td></tr></table>
 </div>
@@ -1100,7 +1098,7 @@
   <small>
     
       Last update:
-      2021-12-13
+      2021-12-14
     
   </small>
 </div>
@@ -1122,7 +1120,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../logger/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Logger" rel="prev">
+        <a href="../logging/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Logging" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1131,7 +1129,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Logger
+              Logging
             </div>
           </div>
         </a>
