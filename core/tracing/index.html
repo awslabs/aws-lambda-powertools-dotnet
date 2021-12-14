@@ -562,17 +562,17 @@ segment name that appears in traces.</p>
         <span class="k">await</span> <span class="nf">BusinessLogic1</span><span class="p">()</span>
             <span class="p">.</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
 
-<span class="hll">        <span class="k">await</span> <span class="nf">BusinessLogic2</span><span class="p">()</span>
-</span>            <span class="p">.</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+        <span class="k">await</span> <span class="nf">BusinessLogic2</span><span class="p">()</span>
+            <span class="p">.</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
     <span class="p">}</span>
 
-<span class="na">    [Tracing]</span>
-<span class="hll">    <span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">BusinessLogic1</span><span class="p">(){</span>
-</span>
+<span class="hll"><span class="na">    [Tracing]</span>
+</span>    <span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">BusinessLogic1</span><span class="p">(){</span>
+
     <span class="p">}</span>
 
-<span class="na">    [Tracing]</span>
-    <span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">BusinessLogic2</span><span class="p">(){</span>
+<span class="hll"><span class="na">    [Tracing]</span>
+</span>    <span class="k">private</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">BusinessLogic2</span><span class="p">(){</span>
 
     <span class="p">}</span>
 <span class="p">}</span>
@@ -682,9 +682,9 @@ context for an operation using any native object.</p>
 <span class="na">    [Tracing]</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span> <span class="n">FunctionHandler</span>
         <span class="p">(</span><span class="n">APIGatewayProxyRequest</span> <span class="n">apigProxyEvent</span><span class="p">,</span> <span class="n">ILambdaContext</span> <span class="n">context</span><span class="p">)</span>
-<span class="hll">    <span class="p">{</span>
-</span>        <span class="n">Tracing</span><span class="p">.</span><span class="n">AddAnnotation</span><span class="p">(</span><span class="s">&quot;annotation&quot;</span><span class="p">,</span> <span class="s">&quot;value&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
+    <span class="p">{</span>
+<span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">AddAnnotation</span><span class="p">(</span><span class="s">&quot;annotation&quot;</span><span class="p">,</span> <span class="s">&quot;value&quot;</span><span class="p">);</span>
+</span>    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table></p>
@@ -708,9 +708,9 @@ context for an operation using any native object.</p>
 <span class="na">    [Tracing]</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span> <span class="n">FunctionHandler</span>
         <span class="p">(</span><span class="n">APIGatewayProxyRequest</span> <span class="n">apigProxyEvent</span><span class="p">,</span> <span class="n">ILambdaContext</span> <span class="n">context</span><span class="p">)</span>
-<span class="hll">    <span class="p">{</span>
-</span>        <span class="n">Tracing</span><span class="p">.</span><span class="n">AddMetadata</span><span class="p">(</span><span class="s">&quot;content&quot;</span><span class="p">,</span> <span class="s">&quot;value&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
+    <span class="p">{</span>
+<span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">AddMetadata</span><span class="p">(</span><span class="s">&quot;content&quot;</span><span class="p">,</span> <span class="s">&quot;value&quot;</span><span class="p">);</span>
+</span>    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table></p>
@@ -741,15 +741,15 @@ under a subsegment, or you are doing multithreaded programming. Refer examples b
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span> <span class="n">FunctionHandler</span>
         <span class="p">(</span><span class="n">APIGatewayProxyRequest</span> <span class="n">apigProxyEvent</span><span class="p">,</span> <span class="n">ILambdaContext</span> <span class="n">context</span><span class="p">)</span>
-<span class="hll">    <span class="p">{</span>
-</span><span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;loggingResponse&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="p">{</span>
+<span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;loggingResponse&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
 </span><span class="hll">            <span class="c1">// Some business logic</span>
-</span>        <span class="p">});</span>
-<span class="hll">
-</span><span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;localNamespace&quot;</span><span class="p">,</span> <span class="s">&quot;loggingResponse&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class="hll">        <span class="p">});</span>
+</span>
+<span class="hll">        <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;localNamespace&quot;</span><span class="p">,</span> <span class="s">&quot;loggingResponse&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
 </span><span class="hll">            <span class="c1">// Some business logic</span>
-</span>        <span class="p">});</span>
-    <span class="p">}</span>
+</span><span class="hll">        <span class="p">});</span>
+</span>    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
@@ -779,17 +779,17 @@ under a subsegment, or you are doing multithreaded programming. Refer examples b
 <span class="p">{</span>
     <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span> <span class="n">FunctionHandler</span>
         <span class="p">(</span><span class="n">APIGatewayProxyRequest</span> <span class="n">apigProxyEvent</span><span class="p">,</span> <span class="n">ILambdaContext</span> <span class="n">context</span><span class="p">)</span>
-<span class="hll">    <span class="p">{</span>
-</span>        <span class="c1">// Extract existing trace data</span>
-<span class="hll">        <span class="kt">var</span> <span class="n">entity</span> <span class="p">=</span> <span class="n">Tracing</span><span class="p">.</span><span class="n">GetEntity</span><span class="p">();</span>
-</span><span class="hll">
-</span><span class="hll">        <span class="kt">var</span> <span class="n">task</span> <span class="p">=</span> <span class="n">Task</span><span class="p">.</span><span class="n">Run</span><span class="p">(()</span> <span class="p">=&gt;</span>
-</span>        <span class="p">{</span>
-            <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;InlineLog&quot;</span><span class="p">,</span> <span class="n">entity</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span>
-            <span class="p">{</span>
-                <span class="c1">// Business logic in separate task</span>
-            <span class="p">});</span>
-        <span class="p">});</span>
+    <span class="p">{</span>
+        <span class="c1">// Extract existing trace data</span>
+        <span class="kt">var</span> <span class="n">entity</span> <span class="p">=</span> <span class="n">Tracing</span><span class="p">.</span><span class="n">GetEntity</span><span class="p">();</span>
+
+        <span class="kt">var</span> <span class="n">task</span> <span class="p">=</span> <span class="n">Task</span><span class="p">.</span><span class="n">Run</span><span class="p">(()</span> <span class="p">=&gt;</span>
+        <span class="p">{</span>
+<span class="hll">            <span class="n">Tracing</span><span class="p">.</span><span class="n">WithSubsegment</span><span class="p">(</span><span class="s">&quot;InlineLog&quot;</span><span class="p">,</span> <span class="n">entity</span><span class="p">,</span> <span class="p">(</span><span class="n">subsegment</span><span class="p">)</span> <span class="p">=&gt;</span>
+</span><span class="hll">            <span class="p">{</span>
+</span><span class="hll">                <span class="c1">// Business logic in separate task</span>
+</span><span class="hll">            <span class="p">});</span>
+</span>        <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -805,7 +805,7 @@ under a subsegment, or you are doing multithreaded programming. Refer examples b
   <small>
     
       Last update:
-      2021-12-12
+      2021-12-14
     
   </small>
 </div>
