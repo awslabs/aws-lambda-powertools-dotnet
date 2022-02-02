@@ -13,7 +13,7 @@
       
       
       <link rel="icon" href="../../media/aws-logo-light.svg">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2b4465f4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1025,15 +1025,11 @@ for known event sources, where either a request ID or X-Ray Trace ID are present
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Handler for requests to Lambda function.</span>
 <span class="cm"> */</span><span class="w"></span>
 <span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Function</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">ILogger</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Logger</span><span class="p">.</span><span class="n">Create</span><span class="p">&lt;</span><span class="n">Function</span><span class="p">&gt;();</span><span class="w"></span>
-
 <span class="hll"><span class="w">    </span><span class="na">[Logging(ClearState = true)]</span><span class="w"></span>
 </span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="w"></span>
 <span class="w">        </span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"></span>
@@ -1044,7 +1040,7 @@ for known event sources, where either a request ID or X-Ray Trace ID are present
 <span class="hll"><span class="w">            </span><span class="n">Logger</span><span class="p">.</span><span class="n">AppendKey</span><span class="p">(</span><span class="s">&quot;SpecialKey&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;value&quot;</span><span class="p">);</span><span class="w"></span>
 </span><span class="w">        </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">        </span><span class="n">logger</span><span class="p">.</span><span class="n">LogInformation</span><span class="p">(</span><span class="s">&quot;Collecting payment&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">Logger</span><span class="p">.</span><span class="n">LogInformation</span><span class="p">(</span><span class="s">&quot;Collecting payment&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="w">        </span><span class="p">...</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -1164,7 +1160,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
   <small>
     
       Last update:
-      2022-01-10
+      2022-01-31
     
   </small>
 </div>
@@ -1245,7 +1241,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
       
         <script src="../../javascript/aws-amplify.min.js"></script>
       
