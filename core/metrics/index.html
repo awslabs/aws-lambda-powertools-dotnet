@@ -801,6 +801,10 @@
 <p>CloudWatch EMF supports a max of 100 metrics per batch. Metrics utility will flush all metrics when adding the 100th metric. Subsequent metrics, e.g. 101th, will be aggregated into a new EMF object, for your convenience.</p>
 </div>
 <div class="admonition warning">
+<p class="admonition-title">Metric value must be a positive number</p>
+<p>Metric values must be a positive number otherwise an <code>ArgumentException</code> will be thrown.</p>
+</div>
+<div class="admonition warning">
 <p class="admonition-title">Do not create metrics or dimensions outside the handler</p>
 <p>Metrics or dimensions added in the global scope will only be added during cold start. Disregard if that's the intended behaviour.</p>
 </div>
@@ -1113,7 +1117,7 @@
   <small>
     
       Last update:
-      2022-01-10
+      2022-02-08
     
   </small>
 </div>
