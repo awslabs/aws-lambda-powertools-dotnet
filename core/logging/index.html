@@ -413,6 +413,19 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-keys" class="md-nav__link">
+    Extra Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Keys">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#clearing-all-state" class="md-nav__link">
     Clearing all state
@@ -534,6 +547,19 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-keys" class="md-nav__link">
+    Extra Keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra Keys">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#clearing-all-state" class="md-nav__link">
@@ -1034,9 +1060,58 @@ for known event sources, where either a request ID or X-Ray Trace ID are present
 </td></tr></table>
 </div>
 </div>
+<h2 id="extra-keys">Extra Keys<a class="headerlink" href="#extra-keys" title="Permanent link">&para;</a></h2>
+<p>Extra keys argument is available for all log levels' methods, as implemented in the standard logging library - e.g. Logger.Information, Logger.Warning.</p>
+<p>It accepts any dictionary, and all keyword arguments will be added as part of the root structure of the logs for that log statement.</p>
+<div class="admonition info">
+<p class="admonition-title">Info<p>Any keyword argument added using extra keys will not be persisted for subsequent messages.</p>
+</p>
+</div>
+<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Function.cs</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Handler for requests to Lambda function.</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Function</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="na">[Logging(LogEvent = true)]</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="p">...</span><span class="w"></span>
+<span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">extraKeys</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="s">&quot;extraKey1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;value1&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">};</span><span class="w"></span>
+
+<span class="hll"><span class="w">        </span><span class="n">Logger</span><span class="p">.</span><span class="n">LogInformation</span><span class="p">(</span><span class="n">extraKeys</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Collecting payment&quot;</span><span class="p">);</span><span class="w"></span>
+</span><span class="w">        </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
 <h3 id="clearing-all-state">Clearing all state<a class="headerlink" href="#clearing-all-state" title="Permanent link">&para;</a></h3>
 <p>Logger is commonly initialized in the global scope. Due to <a href="https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html">Lambda Execution Context reuse</a>, this means that custom keys can be persisted across invocations. If you want all custom keys to be deleted, you can use <code>ClearState=true</code> attribute on <code>[Logging]</code> attribute.</p>
-<div class="tabbed-set" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">Function.cs</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Function.cs</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1077,7 +1152,7 @@ for known event sources, where either a request ID or X-Ray Trace ID are present
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">#1 Request</label><div class="tabbed-content">
+<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">#1 Request</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1104,7 +1179,7 @@ for known event sources, where either a request ID or X-Ray Trace ID are present
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><label for="__tabbed_7_3">#2 Request</label><div class="tabbed-content">
+<input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><label for="__tabbed_8_3">#2 Request</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1137,7 +1212,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 <p class="admonition-title">Info</p>
 <p>Configuration on environment variable is given precedence over sampling rate configuration on attribute, provided it's in valid value range.</p>
 </div>
-<div class="tabbed-set" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><label for="__tabbed_8_1">Sampling via attribute parameter</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Sampling via attribute parameter</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1164,7 +1239,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><label for="__tabbed_8_2">Sampling via environment variable</label><div class="tabbed-content">
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Sampling via environment variable</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1192,7 +1267,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 <p>Logging output casing can only be set using environment variables.</p>
 </div>
 <p>Below are some output examples for different casing.</p>
-<div class="tabbed-set" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Camel Case</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Camel Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1217,7 +1292,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Pascal Case</label><div class="tabbed-content">
+<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Pascal Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1242,7 +1317,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><label for="__tabbed_9_3">Snake Case</label><div class="tabbed-content">
+<input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><label for="__tabbed_10_3">Snake Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1274,7 +1349,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
   <small>
     
       Last update:
-      2022-02-17
+      2022-02-25
     
   </small>
 </div>
