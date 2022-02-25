@@ -1261,13 +1261,37 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </div>
 <h2 id="configure-log-output-casing">Configure Log Output Casing<a class="headerlink" href="#configure-log-output-casing" title="Permanent link">&para;</a></h2>
 <p>By definition <em>AWS Lambda Powertools for .NET</em> outputs logging keys using <strong>snake case</strong> (e.g. <em>"function_memory_size": 128</em>). This allows developers using different AWS Lambda Powertools runtimes, to search logs across services written in languages such as Python or TypeScript.</p>
-<p>If you want, you can override this behavior by setting the <code>POWERTOOLS_LOGGER_CASE</code> environment variable on your AWS Lambda function. Allowed values are: <code>CamelCase</code>, <code>PascalCase</code> and <code>SnakeCase</code>.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Logging output casing can only be set using environment variables.</p>
+<p>If you want to override the default behaviour you can either set the desired casing through attributes, as described in the example below, or by setting the <code>POWERTOOLS_LOGGER_CASE</code> environment variable on your AWS Lambda function. Allowed values are: <code>CamelCase</code>, <code>PascalCase</code> and <code>SnakeCase</code>.</p>
+<div class="tabbed-set" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Output casing via attribute parameter</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Handler for requests to Lambda function.</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Function</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="na">[Logging(LoggerOutputCase = LoggerOutputCase.CamelCase)]</span><span class="w"></span>
+</span><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="p">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="p">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="p">...</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</td></tr></table>
+</div>
 </div>
 <p>Below are some output examples for different casing.</p>
-<div class="tabbed-set" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Camel Case</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Camel Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1292,7 +1316,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Pascal Case</label><div class="tabbed-content">
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Pascal Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1317,7 +1341,7 @@ via <code>SamplingRate</code> parameter on attribute.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><label for="__tabbed_10_3">Snake Case</label><div class="tabbed-content">
+<input id="__tabbed_11_3" name="__tabbed_11" type="radio" /><label for="__tabbed_11_3">Snake Case</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
