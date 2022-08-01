@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Metrics
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Metrics
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Metrics.Metrics">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Metrics_Metrics" data-uid="AWS.Lambda.Powertools.Metrics.Metrics" class="text-break">Class Metrics
+  </h1>
+  <div class="markdown level0 summary"><p>Class Metrics.
+Implements the <a class="xref" href="AWS.Lambda.Powertools.Metrics.IMetrics.html">IMetrics</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Metrics</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Metrics.IMetrics.html">IMetrics</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Metrics.html">AWS.Lambda.Powertools.Metrics</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Metrics.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Metrics_Metrics_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Metrics : object, IMetrics</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AddDimension_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddDimension*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AddDimension_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddDimension(System.String,System.String)">AddDimension(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds new dimension to memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDimension(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Dimension key. Must not be null, empty or whitespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Dimension value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AddMetadata_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddMetadata*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AddMetadata_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddMetadata(System.String,System.Object)">AddMetadata(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds metadata to memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMetadata(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Metadata key. Must not be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metadata value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AddMetric_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddMetric*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AddMetric_System_String_System_Double_AWS_Lambda_Powertools_Metrics_MetricUnit_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AddMetric(System.String,System.Double,AWS.Lambda.Powertools.Metrics.MetricUnit)">AddMetric(String, Double, MetricUnit)</h4>
+  <div class="markdown level1 summary"><p>Adds new metric to memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMetric(string key, double value, MetricUnit unit = MetricUnit.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Metric Key. Must not be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metric Value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Metrics.MetricUnit.html">MetricUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td><p>Metric Unit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_Dispose_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.Dispose*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_Dispose" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Implementation of IDisposable interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_GetNamespace_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.GetNamespace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_GetNamespace" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.GetNamespace">GetNamespace()</h4>
+  <div class="markdown level1 summary"><p>Retrieves namespace identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetNamespace()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Namespace identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_PushSingleMetric_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.PushSingleMetric*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_PushSingleMetric_System_String_System_Double_AWS_Lambda_Powertools_Metrics_MetricUnit_System_String_System_String_Dictionary_System_String_System_String__" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.PushSingleMetric(System.String,System.Double,AWS.Lambda.Powertools.Metrics.MetricUnit,System.String,System.String,Dictionary{System.String,System.String})">PushSingleMetric(String, Double, MetricUnit, String, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Pushes single metric to CloudWatch using Embedded Metric Format. This can be used to push metrics with a different
+context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushSingleMetric(string metricName, double value, MetricUnit unit, string nameSpace = null, string service = null, Dictionary&lt;string, string&gt; defaultDimensions = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metricName</span></td>
+        <td><p>Metric Name. Metric key cannot be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metric Value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Metrics.MetricUnit.html">MetricUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td><p>Metric Unit</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>Metric Namespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>Service Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">defaultDimensions</span></td>
+        <td><p>Default dimensions list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_Serialize_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.Serialize*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_Serialize" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.Serialize">Serialize()</h4>
+  <div class="markdown level1 summary"><p>Serialize global context object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Serialize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Serialized global context object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_SetDefaultDimensions_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.SetDefaultDimensions*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_SetDefaultDimensions_Dictionary_System_String_System_String__" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.SetDefaultDimensions(Dictionary{System.String,System.String})">SetDefaultDimensions(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Set default dimension list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultDimensions(Dictionary&lt;string, string&gt; defaultDimensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">defaultDimensions</span></td>
+        <td><p>Default Dimension List</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_SetNamespace_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.SetNamespace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_SetNamespace_System_String_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.SetNamespace(System.String)">SetNamespace(String)</h4>
+  <div class="markdown level1 summary"><p>Sets metrics namespace identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetNamespace(string nameSpace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>Metrics Namespace Identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddDimension_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddDimension*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddDimension_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddDimension(System.String,System.String)">IMetrics.AddDimension(String, String)</h4>
+  <div class="markdown level1 summary"><p>Implements interface that adds a dimension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.AddDimension(string key, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Dimension key. Must not be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Dimension value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddMetadata_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddMetadata*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddMetadata_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddMetadata(System.String,System.Object)">IMetrics.AddMetadata(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Implements interface that adds metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.AddMetadata(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Metadata key. Must not be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metadata value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddMetric_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddMetric*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_AddMetric_System_String_System_Double_AWS_Lambda_Powertools_Metrics_MetricUnit_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#AddMetric(System.String,System.Double,AWS.Lambda.Powertools.Metrics.MetricUnit)">IMetrics.AddMetric(String, Double, MetricUnit)</h4>
+  <div class="markdown level1 summary"><p>Implements interface that adds new metric to memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.AddMetric(string key, double value, MetricUnit unit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Metric Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metric Value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Metrics.MetricUnit.html">MetricUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td><p>Metric Unit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_Flush_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#Flush*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_Flush_System_Boolean_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#Flush(System.Boolean)">IMetrics.Flush(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Flushes metrics in Embedded Metric Format (EMF) to Standard Output. In Lambda, this output is collected
+automatically and sent to Cloudwatch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.Flush(bool metricsOverflow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">metricsOverflow</span></td>
+        <td><p>If enabled, non-default dimensions are cleared after flushing metrics</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Metrics.SchemaValidationException.html">SchemaValidationException</a></td>
+        <td><p>true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_GetNamespace_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#GetNamespace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_GetNamespace" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#GetNamespace">IMetrics.GetNamespace()</h4>
+  <div class="markdown level1 summary"><p>Implements interface that allows retrieval of namespace identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IMetrics.GetNamespace()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Namespace identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_GetService_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#GetService*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_GetService" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#GetService">IMetrics.GetService()</h4>
+  <div class="markdown level1 summary"><p>Implements interface to get service name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IMetrics.GetService()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_PushSingleMetric_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#PushSingleMetric*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_PushSingleMetric_System_String_System_Double_AWS_Lambda_Powertools_Metrics_MetricUnit_System_String_System_String_Dictionary_System_String_System_String__" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#PushSingleMetric(System.String,System.Double,AWS.Lambda.Powertools.Metrics.MetricUnit,System.String,System.String,Dictionary{System.String,System.String})">IMetrics.PushSingleMetric(String, Double, MetricUnit, String, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implements the interface that pushes single metric to CloudWatch using Embedded Metric Format. This can be used to
+push metrics with a different context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.PushSingleMetric(string metricName, double value, MetricUnit unit, string nameSpace, string service, Dictionary&lt;string, string&gt; defaultDimensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metricName</span></td>
+        <td><p>Metric Name. Metric key cannot be null, empty or whitespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Metric Value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Metrics.MetricUnit.html">MetricUnit</a></td>
+        <td><span class="parametername">unit</span></td>
+        <td><p>Metric Unit</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>Metric Namespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">service</span></td>
+        <td><p>Service Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">defaultDimensions</span></td>
+        <td><p>Default dimensions list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_SetDefaultDimensions_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#SetDefaultDimensions*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_SetDefaultDimensions_Dictionary_System_String_System_String__" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#SetDefaultDimensions(Dictionary{System.String,System.String})">IMetrics.SetDefaultDimensions(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implements interface that sets default dimension list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.SetDefaultDimensions(Dictionary&lt;string, string&gt; defaultDimensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">defaultDimensions</span></td>
+        <td><p>Default Dimension List</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_SetNamespace_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#SetNamespace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Metrics_Metrics_AWS_Lambda_Powertools_Metrics_IMetrics_SetNamespace_System_String_" data-uid="AWS.Lambda.Powertools.Metrics.Metrics.AWS#Lambda#Powertools#Metrics#IMetrics#SetNamespace(System.String)">IMetrics.SetNamespace(String)</h4>
+  <div class="markdown level1 summary"><p>Implements interface that sets metrics namespace identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IMetrics.SetNamespace(string nameSpace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>Metrics Namespace Identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Metrics.IMetrics.html">IMetrics</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Metrics.IMetrics.html">IMetrics</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
