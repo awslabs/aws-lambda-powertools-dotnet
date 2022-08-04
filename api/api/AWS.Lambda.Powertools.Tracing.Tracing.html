@@ -1,0 +1,619 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Tracing
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Tracing
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Tracing.Tracing">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Tracing_Tracing" data-uid="AWS.Lambda.Powertools.Tracing.Tracing" class="text-break">Class Tracing
+  </h1>
+  <div class="markdown level0 summary"><p>Class Tracing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Tracing</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Tracing.html">AWS.Lambda.Powertools.Tracing</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Tracing.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Tracing_Tracing_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Tracing : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_AddAnnotation_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddAnnotation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_AddAnnotation_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddAnnotation(System.String,System.Object)">AddAnnotation(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key and value as annotation to current segment.
+The type of value is restricted. Only <span class="xref">System.String</span>, <span class="xref">System.Int32</span>,
+<span class="xref">System.Int64</span>,
+<span class="xref">System.Double</span> and <span class="xref">System.Boolean</span> are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAnnotation(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the annotation to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the annotation to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.XRay.Recorder.Core.Exceptions.EntityNotAvailableException</span></td>
+        <td><p>Entity is not available in trace
+context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_AddException_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddException*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_AddException_Exception_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddException(Exception)">AddException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Add the exception to current segment and also mark current segment as fault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.XRay.Recorder.Core.Exceptions.EntityNotAvailableException</span></td>
+        <td><p>Entity is not available in trace
+context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_AddHttpInformation_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddHttpInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_AddHttpInformation_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddHttpInformation(System.String,System.Object)">AddHttpInformation(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key and value as http information to current segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddHttpInformation(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the http information to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the http information to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Key is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Value is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Amazon.XRay.Recorder.Core.Exceptions.EntityNotAvailableException</span></td>
+        <td><p>Entity is not available in trace
+context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_AddMetadata_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddMetadata*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_AddMetadata_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddMetadata(System.String,System.Object)">AddMetadata(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key and value to metadata with given namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMetadata(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_AddMetadata_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddMetadata*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_AddMetadata_System_String_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.AddMetadata(System.String,System.String,System.Object)">AddMetadata(String, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified key and value to metadata with given namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMetadata(string nameSpace, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>The namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_GetEntity_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.GetEntity*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_GetEntity" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.GetEntity">GetEntity()</h4>
+  <div class="markdown level1 summary"><p>Gets entity (segment/subsegment) from the
+<span class="xref">Amazon.XRay.Recorder.Core.AWSXRayRecorderImpl.TraceContext</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Entity GetEntity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><p>The entity (segment/subsegment)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.XRay.Recorder.Core.Exceptions.EntityNotAvailableException</span></td>
+        <td><p>Thrown when the entity is not
+available to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_SetEntity_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.SetEntity*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_SetEntity_Entity_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.SetEntity(Entity)">SetEntity(Entity)</h4>
+  <div class="markdown level1 summary"><p>Set the specified entity (segment/subsegment) into
+<span class="xref">Amazon.XRay.Recorder.Core.AWSXRayRecorderImpl.TraceContext</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetEntity(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity to be set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.XRay.Recorder.Core.Exceptions.EntityNotAvailableException</span></td>
+        <td><p>Thrown when the entity is not
+available to set</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_System_String_Action_Subsegment__" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment(System.String,Action{Subsegment})">WithSubsegment(String, Action&lt;Subsegment&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a new subsegment around the passed consumer. This also provides access to
+the newly created subsegment.
+The namespace used follows the flow as described in
+<a class="xref" href="AWS.Lambda.Powertools.Tracing.TracingAttribute.html">TracingAttribute</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WithSubsegment(string name, Action&lt;Subsegment&gt; subsegment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the subsegment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Subsegment</span>&gt;</td>
+        <td><span class="parametername">subsegment</span></td>
+        <td><p>The AWS X-Ray subsegment for the wrapped consumer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_System_String_Entity_Action_Subsegment__" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment(System.String,Entity,Action{Subsegment})">WithSubsegment(String, Entity, Action&lt;Subsegment&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a new subsegment around the passed consumer. This also provides access to
+the newly created subsegment.
+This method is intended for use with multi-threaded programming where the
+context is lost between threads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WithSubsegment(string name, Entity entity, Action&lt;Subsegment&gt; subsegment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the subsegment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The current AWS X-Ray context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Subsegment</span>&gt;</td>
+        <td><span class="parametername">subsegment</span></td>
+        <td><p>The AWS X-Ray subsegment for the wrapped consumer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_System_String_System_String_Action_Subsegment__" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment(System.String,System.String,Action{Subsegment})">WithSubsegment(String, String, Action&lt;Subsegment&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a new subsegment around the passed consumer. This also provides access to
+the newly created subsegment.
+The namespace used follows the flow as described in
+<a class="xref" href="AWS.Lambda.Powertools.Tracing.TracingAttribute.html">TracingAttribute</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WithSubsegment(string nameSpace, string name, Action&lt;Subsegment&gt; subsegment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>The name space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the subsegment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Subsegment</span>&gt;</td>
+        <td><span class="parametername">subsegment</span></td>
+        <td><p>The AWS X-Ray subsegment for the wrapped consumer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Tracing_WithSubsegment_System_String_System_String_Entity_Action_Subsegment__" data-uid="AWS.Lambda.Powertools.Tracing.Tracing.WithSubsegment(System.String,System.String,Entity,Action{Subsegment})">WithSubsegment(String, String, Entity, Action&lt;Subsegment&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a new subsegment around the passed consumer. This also provides access to
+the newly created subsegment.
+This method is intended for use with multi-threaded programming where the
+context is lost between threads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WithSubsegment(string nameSpace, string name, Entity entity, Action&lt;Subsegment&gt; subsegment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>The namespace of the subsegment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the subsegment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The current AWS X-Ray context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Subsegment</span>&gt;</td>
+        <td><span class="parametername">subsegment</span></td>
+        <td><p>The AWS X-Ray subsegment for the wrapped consumer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

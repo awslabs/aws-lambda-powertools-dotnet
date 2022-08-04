@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LoggingAttribute
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LoggingAttribute
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Logging_LoggingAttribute" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute" class="text-break">Class LoggingAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a Lambda optimized logger with output structured as JSON.                            <br>
+<br>
+Key features                                                                                  <br>
+---------------------                                                                         <br></p>
+<ul><li>Capture key fields from Lambda context and cold start</li><li>Log Lambda event when instructed (disabled by default)</li><li>Log sampling enables DEBUG log level for a percentage of requests (disabled by default)</li><li>Append additional keys to structured log at any point in time</li></ul>
+<br> 
+Environment variables                                                                         <br>
+---------------------                                                                         <br> 
+<table><thead><tr><th>Variable name</th><th>Description</th></tr></thead><tbody><tr><td>POWERTOOLS_SERVICE_NAME</td><td>string, service name</td></tr><tr><td>POWERTOOLS_LOG_LEVEL</td><td>string, logging level (e.g. Information, Debug, and Trace)</td></tr><tr><td>POWERTOOLS_LOGGER_CASE</td><td>string, logger output case (e.g. CamelCase, PascalCase, and SnakeCase)</td></tr><tr><td>POWERTOOLS_LOGGER_SAMPLE_RATE</td><td>double, sampling rate ranging from 0 to 1, 1 being 100% sampling</td></tr></tbody></table>
+<br>
+Parameters                                                                                    <br>
+-----------                                                                                   <br>
+<table><thead><tr><th>Parameter name</th><th>Description</th></tr></thead><tbody><tr><td>Service</td><td>string, service name to be appended in logs, by default &quot;service_undefined&quot;</td></tr><tr><td>LogLevel</td><td>enum, logging level (e.g. Information, Debug, and Trace), by default Information</td></tr><tr><td>LoggerOutputCase</td><td>enum, logger output case (e.g. CamelCase, PascalCase, and SnakeCase)</td></tr><tr><td>SamplingRate</td><td>double, sample rate for debug calls within execution context defaults to 0.0</td></tr><tr><td>CorrelationIdPath</td><td>string, pointer path to extract correlation id from input parameter</td></tr><tr><td>ClearState</td><td>bool, clear all custom keys on each request, by default false</td></tr></tbody></table>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AWS.Lambda.Powertools.Common.UniversalWrapperAttribute.html">UniversalWrapperAttribute</a></div>
+    <div class="level2"><a class="xref" href="AWS.Lambda.Powertools.Common.MethodAspectAttribute.html">MethodAspectAttribute</a></div>
+    <div class="level3"><span class="xref">LoggingAttribute</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">AWS.Lambda.Powertools.Common.MethodAspectAttribute.WrapSync&lt;T&gt;(Func&lt;, &gt;, System.Object[], AWS.Lambda.Powertools.Common.AspectEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">AWS.Lambda.Powertools.Common.MethodAspectAttribute.WrapAsync&lt;T&gt;(Func&lt;, &gt;, System.Object[], AWS.Lambda.Powertools.Common.AspectEventArgs)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Logging.html">AWS.Lambda.Powertools.Logging</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Logging.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LoggingAttribute : MethodAspectAttribute</code></pre>
+  </div>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_examples"><strong>Examples</strong></h5>
+  <pre><code>    [Logging(
+        Service = &quot;Example&quot;,
+        LogEvent = true,
+        ClearState = true,
+        LogLevel = LogLevel.Debug,
+        LoggerOutputCase = LoggerOutputCase.SnakeCase,
+        CorrelationIdPath = &quot;/headers/my_request_id_header&quot;)
+    ]
+    public async Task&lt;APIGatewayProxyResponse> FunctionHandler
+         (APIGatewayProxyRequest apigProxyEvent, ILambdaContext context)
+    {
+        ...
+    }</code></pre>
+
+  <h3 id="properties">Properties
+  </h3>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_ClearState_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.ClearState*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_ClearState" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.ClearState">ClearState</h4>
+  <div class="markdown level1 summary"><p>Logger is commonly initialized in the global scope.
+Due to Lambda Execution Context reuse, this means that custom keys can be persisted across invocations.
+Set this attribute to true if you want all custom keys to be deleted on each request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ClearState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [clear state]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_CorrelationIdPath_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.CorrelationIdPath*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_CorrelationIdPath" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.CorrelationIdPath">CorrelationIdPath</h4>
+  <div class="markdown level1 summary"><p>Pointer path to extract correlation id from input parameter.
+The first handler parameter is the input to the handler, which can be
+event data (published by an event source) or custom input that you provide
+such as a string or any custom data object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CorrelationIdPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The correlation identifier path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LogEvent_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LogEvent*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LogEvent" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LogEvent">LogEvent</h4>
+  <div class="markdown level1 summary"><p>Explicitly log any incoming event, The first handler parameter is the input to the handler,
+which can be event data (published by an event source) or custom input that you provide
+such as a string or any custom data object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LogEvent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [log event]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LoggerOutputCase_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LoggerOutputCase*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LoggerOutputCase" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LoggerOutputCase">LoggerOutputCase</h4>
+  <div class="markdown level1 summary"><p>Specify output case for logging (SnakeCase, by default).
+This can be also set using the environment variable <code>POWERTOOLS_LOGGER_CASE</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoggerOutputCase LoggerOutputCase { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Logging.LoggerOutputCase.html">LoggerOutputCase</a></td>
+        <td><p>The log level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LogLevel_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LogLevel*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_LogLevel" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.LogLevel">LogLevel</h4>
+  <div class="markdown level1 summary"><p>Specify the minimum log level for logging (Information, by default).
+This can be also set using the environment variable <code>POWERTOOLS_LOG_LEVEL</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogLevel LogLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><p>The log level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_SamplingRate_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.SamplingRate*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_SamplingRate" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.SamplingRate">SamplingRate</h4>
+  <div class="markdown level1 summary"><p>Dynamically set a percentage of logs to DEBUG level.
+This can be also set using the environment variable <code>POWERTOOLS_LOGGER_SAMPLE_RATE</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SamplingRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The sampling rate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_Service_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.Service*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_Service" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.Service">Service</h4>
+  <div class="markdown level1 summary"><p>Service name is used for logging.
+This can be also set using the environment variable <code>POWERTOOLS_SERVICE_NAME</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Service { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Logging_LoggingAttribute_CreateHandler_" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.CreateHandler*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggingAttribute_CreateHandler" data-uid="AWS.Lambda.Powertools.Logging.LoggingAttribute.CreateHandler">CreateHandler()</h4>
+  <div class="markdown level1 summary"><p>Creates the handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IMethodAspectHandler CreateHandler()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Common.IMethodAspectHandler.html">IMethodAspectHandler</a></td>
+        <td><p>IMethodAspectHandler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Common.MethodAspectAttribute.html#AWS_Lambda_Powertools_Common_MethodAspectAttribute_CreateHandler">MethodAspectAttribute.CreateHandler()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

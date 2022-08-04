@@ -1,0 +1,2634 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LoggerExtensions
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LoggerExtensions
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Logging_LoggerExtensions" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions" class="text-break">Class LoggerExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Class LoggerExtensions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LoggerExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Logging.html">AWS.Lambda.Powertools.Logging</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Logging.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LoggerExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_ILogger_LogLevel_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log(ILogger,LogLevel,Exception)">Log(ILogger, LogLevel, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(this ILogger logger, LogLevel logLevel, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_ILogger_LogLevel_Exception__examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_ILogger_LogLevel_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log(ILogger,LogLevel,System.Object)">Log(ILogger, LogLevel, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message as JSON at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(this ILogger logger, LogLevel logLevel, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_ILogger_LogLevel_System_Object__examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(ILogger,LogLevel,``0,EventId,Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(ILogger,LogLevel,``0,EventId,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(ILogger,LogLevel,``0,Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(ILogger,LogLevel,``0,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LogLevel</span></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_ILogger_LogLevel___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical(ILogger,Exception)">LogCritical(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogCritical(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical(ILogger,System.Object)">LogCritical(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a critical log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogCritical(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogCritical&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogCritical(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical``1(ILogger,``0,EventId,System.String,System.Object[])">LogCritical&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogCritical(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical``1(ILogger,``0,Exception,System.String,System.Object[])">LogCritical&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogCritical(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical``1(ILogger,``0,System.String,System.Object[])">LogCritical&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogCritical(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug(ILogger,Exception)">LogDebug(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogDebug(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug(ILogger,System.Object)">LogDebug(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a debug log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogDebug(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogDebug&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogDebug(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug``1(ILogger,``0,EventId,System.String,System.Object[])">LogDebug&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogDebug(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug``1(ILogger,``0,Exception,System.String,System.Object[])">LogDebug&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogDebug(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogDebug``1(ILogger,``0,System.String,System.Object[])">LogDebug&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogDebug__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogDebug(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError(ILogger,Exception)">LogError(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogError(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError(ILogger,System.Object)">LogError(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a error log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogCritical(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogError&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogError(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError``1(ILogger,``0,EventId,System.String,System.Object[])">LogError&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogError(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError``1(ILogger,``0,Exception,System.String,System.Object[])">LogError&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogError(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogError``1(ILogger,``0,System.String,System.Object[])">LogError&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogError__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogError(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation(ILogger,Exception)">LogInformation(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an information log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogInformation(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation(ILogger,System.Object)">LogInformation(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an information log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogInformation(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogInformation&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an informational log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogInformation(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation``1(ILogger,``0,EventId,System.String,System.Object[])">LogInformation&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an informational log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogInformation(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation``1(ILogger,``0,Exception,System.String,System.Object[])">LogInformation&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an informational log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogInformation(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogInformation``1(ILogger,``0,System.String,System.Object[])">LogInformation&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an informational log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogInformation__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogInformation(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace(ILogger,Exception)">LogTrace(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogTrace(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace(ILogger,System.Object)">LogTrace(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a trace log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogTrace(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogTrace&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogTrace(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace``1(ILogger,``0,EventId,System.String,System.Object[])">LogTrace&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogTrace(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace``1(ILogger,``0,Exception,System.String,System.Object[])">LogTrace&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogTrace(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogTrace``1(ILogger,``0,System.String,System.Object[])">LogTrace&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogTrace__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogTrace(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_ILogger_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning(ILogger,Exception)">LogWarning(ILogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning(this ILogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_ILogger_Exception__examples">Examples</h5>
+  <p>logger.LogWarning(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_ILogger_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning(ILogger,System.Object)">LogWarning(ILogger, Object)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a warning log message as JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning(this ILogger logger, object message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The object to be serialized as JSON.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_ILogger_System_Object__examples">Examples</h5>
+  <p>logger.LogWarning(new {User = user, Address = address})</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_EventId_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning``1(ILogger,``0,EventId,Exception,System.String,System.Object[])">LogWarning&lt;T&gt;(ILogger, T, EventId, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_EventId_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogWarning(extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning``1(ILogger,``0,EventId,System.String,System.Object[])">LogWarning&lt;T&gt;(ILogger, T, EventId, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning&lt;T&gt;(this ILogger logger, T extraKeys, EventId eventId, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventId</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogWarning(extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning``1(ILogger,``0,Exception,System.String,System.Object[])">LogWarning&lt;T&gt;(ILogger, T, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning&lt;T&gt;(this ILogger logger, T extraKeys, Exception exception, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogWarning(extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogWarning``1(ILogger,``0,System.String,System.Object[])">LogWarning&lt;T&gt;(ILogger, T, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning&lt;T&gt;(this ILogger logger, T extraKeys, string message, params object[] args)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <see cref="!:ILogger"></see> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_ILogger___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.LogWarning(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

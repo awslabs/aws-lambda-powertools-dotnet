@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IXRayRecorder
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IXRayRecorder
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder" class="text-break">Interface IXRayRecorder
+  </h1>
+  <div class="markdown level0 summary"><p>Interface IXRayRecorder</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Tracing.Internal.html">AWS.Lambda.Powertools.Tracing.Internal</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Tracing.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IXRayRecorder</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_Emitter_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.Emitter*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_Emitter" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.Emitter">Emitter</h4>
+  <div class="markdown level1 summary"><p>Gets the emitter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISegmentEmitter Emitter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISegmentEmitter</span></td>
+        <td><p>The emitter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_StreamingStrategy_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.StreamingStrategy*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_StreamingStrategy" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.StreamingStrategy">StreamingStrategy</h4>
+  <div class="markdown level1 summary"><p>Gets the streaming strategy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStreamingStrategy StreamingStrategy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IStreamingStrategy</span></td>
+        <td><p>The streaming strategy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddAnnotation_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddAnnotation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddAnnotation_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddAnnotation(System.String,System.Object)">AddAnnotation(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the annotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddAnnotation(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddException_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddException*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddException_Exception_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddException(Exception)">AddException(Exception)</h4>
+  <div class="markdown level1 summary"><p>Adds the exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddHttpInformation_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddHttpInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddHttpInformation_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddHttpInformation(System.String,System.Object)">AddHttpInformation(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the HTTP information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddHttpInformation(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddMetadata_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddMetadata*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_AddMetadata_System_String_System_String_System_Object_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.AddMetadata(System.String,System.String,System.Object)">AddMetadata(String, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddMetadata(string nameSpace, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameSpace</span></td>
+        <td><p>The name space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_BeginSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.BeginSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_BeginSubsegment_System_String_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.BeginSubsegment(System.String)">BeginSubsegment(String)</h4>
+  <div class="markdown level1 summary"><p>Begins the subsegment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BeginSubsegment(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_EndSubsegment_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.EndSubsegment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_EndSubsegment" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.EndSubsegment">EndSubsegment()</h4>
+  <div class="markdown level1 summary"><p>Ends the subsegment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EndSubsegment()</code></pre>
+  </div>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_GetEntity_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.GetEntity*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_GetEntity" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.GetEntity">GetEntity()</h4>
+  <div class="markdown level1 summary"><p>Gets the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Entity GetEntity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><p>Entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_SetEntity_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.SetEntity*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_SetEntity_Entity_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.SetEntity(Entity)">SetEntity(Entity)</h4>
+  <div class="markdown level1 summary"><p>Sets the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEntity(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Entity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_SetNamespace_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.SetNamespace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Tracing_Internal_IXRayRecorder_SetNamespace_System_String_" data-uid="AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.SetNamespace(System.String)">SetNamespace(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the namespace.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetNamespace(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
