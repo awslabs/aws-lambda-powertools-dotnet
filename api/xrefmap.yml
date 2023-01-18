@@ -982,6 +982,60 @@ references:
   commentId: N:AWS.Lambda.Powertools.Logging.Internal
   fullName: AWS.Lambda.Powertools.Logging.Internal
   nameWithType: AWS.Lambda.Powertools.Logging.Internal
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters
+  name: AWS.Lambda.Powertools.Logging.Internal.Converters
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.html
+  commentId: N:AWS.Lambda.Powertools.Logging.Internal.Converters
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters
+  nameWithType: AWS.Lambda.Powertools.Logging.Internal.Converters
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter
+  name: ConstantClassConverter
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html
+  commentId: T:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter
+  nameWithType: ConstantClassConverter
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert(Type)
+  name: CanConvert(Type)
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_CanConvert_Type_
+  commentId: M:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert(Type)
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert(Type)
+  nameWithType: ConstantClassConverter.CanConvert(Type)
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert*
+  name: CanConvert
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_CanConvert_
+  commentId: Overload:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.CanConvert
+  nameWithType: ConstantClassConverter.CanConvert
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read(Utf8JsonReader@,Type,JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_Read_Utf8JsonReader__Type_JsonSerializerOptions_
+  commentId: M:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read(Utf8JsonReader@,Type,JsonSerializerOptions)
+  name.vb: Read(ByRef Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName.vb: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read(ByRef Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType: ConstantClassConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: ConstantClassConverter.Read(ByRef Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read*
+  name: Read
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_Read_
+  commentId: Overload:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Read
+  nameWithType: ConstantClassConverter.Read
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write(Utf8JsonWriter,System.Object,JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, Object, JsonSerializerOptions)
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_Write_Utf8JsonWriter_System_Object_JsonSerializerOptions_
+  commentId: M:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write(Utf8JsonWriter,System.Object,JsonSerializerOptions)
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write(Utf8JsonWriter, System.Object, JsonSerializerOptions)
+  nameWithType: ConstantClassConverter.Write(Utf8JsonWriter, Object, JsonSerializerOptions)
+- uid: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write*
+  name: Write
+  href: api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html#AWS_Lambda_Powertools_Logging_Internal_Converters_ConstantClassConverter_Write_
+  commentId: Overload:AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.Write
+  nameWithType: ConstantClassConverter.Write
 - uid: AWS.Lambda.Powertools.Logging.Internal.LoggerProvider
   name: LoggerProvider
   href: api/AWS.Lambda.Powertools.Logging.Internal.LoggerProvider.html
