@@ -12,8 +12,12 @@
         <meta name="author" content="Amazon Web Services">
       
       
+      
+      
+        <link rel="next" href="references/">
+      
       <link rel="icon" href="media/aws-logo-light.svg">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0rc1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
@@ -21,13 +25,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.476df7d4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
       
       
+
     
     
     
@@ -35,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -46,6 +50,7 @@
     
       
 
+    
     
     
   </head>
@@ -128,7 +133,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
@@ -136,7 +140,6 @@
             </label>
           
         
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -163,7 +166,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -175,7 +178,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -187,7 +190,7 @@
         <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -231,7 +234,7 @@
       <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -283,8 +286,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-powertools-libraries" class="md-nav__link">
-    Available Powertools libraries
+  <a href="#features" class="md-nav__link">
+    Features
   </a>
   
 </li>
@@ -304,21 +307,14 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-members-of-the-aws-lambda-powertools-family" class="md-nav__link">
-    Other members of the AWS Lambda Powertools family
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -331,8 +327,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
+  <a href="#tenets" class="md-nav__link">
+    Tenets
   </a>
   
 </li>
@@ -341,21 +337,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="tenets/" class="md-nav__link">
-        Our tenets
-      </a>
     </li>
   
 
@@ -427,14 +408,32 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="we_made_this/" class="md-nav__link">
+        We Made This (Community)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
       
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
         
@@ -446,7 +445,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
           Core utilities
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -533,8 +532,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-powertools-libraries" class="md-nav__link">
-    Available Powertools libraries
+  <a href="#features" class="md-nav__link">
+    Features
   </a>
   
 </li>
@@ -554,21 +553,14 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-members-of-the-aws-lambda-powertools-family" class="md-nav__link">
-    Other members of the AWS Lambda Powertools family
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -581,8 +573,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    Credits
+  <a href="#tenets" class="md-nav__link">
+    Tenets
   </a>
   
 </li>
@@ -595,26 +587,39 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/edit/develop/docs/index.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
+
+  
+  
 
 
+
+<!-- markdownlint-disable MD043 MD013 -->
 
 <h1 id="aws-lambda-powertools-for-net">AWS Lambda Powertools for .NET<a class="headerlink" href="#aws-lambda-powertools-for-net" title="Permanent link">&para;</a></h1>
-<p>AWS Lambda Powertools for .NET (which from here will be referred as Powertools) is a suite of utilities for <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> functions to ease adopting best practices such as tracing, structured logging, custom metrics, and more. Please note, Powertools is <strong>optimized for .NET 6 only</strong>.</p>
-<p>The GitHub repository for this project can be found <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet">here</a>.</p>
+<p>AWS Lambda Powertools for .NET (which from here will be referred as Powertools) is a suite of utilities for <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> functions to ease adopting best practices such as tracing, structured logging, custom metrics, and more. Please note, <strong>Powertools is optimized for .NET 6+</strong>.</p>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>Powertools is also available for <a href="https://awslabs.github.io/aws-lambda-powertools-python/" target="_blank">Python</a>, <a href="https://awslabs.github.io/aws-lambda-powertools-java/" target="_blank">Java</a>, and <a href="https://awslabs.github.io/aws-lambda-powertools-typescript/latest/" target="_blank">TypeScript</a>.</p>
+</details>
+<details class="hint">
+<summary>Support this project by becoming a reference customer or sharing your work <img alt="❤️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2764.png" title=":heart:" /></summary>
+<p>You can choose to support us in three ways:</p>
+<p>1) <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/issues/new?assignees=&amp;labels=customer-reference&amp;template=support_powertools.yml&amp;title=%5BSupport+Lambda+Powertools%5D%3A+%3Cyour+organization+name%3E"><strong>Become a reference customers</strong></a>. This gives us permission to list your company in our documentation.</p>
+<p>2) <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/issues/new?assignees=&amp;labels=community-content&amp;template=share_your_work.yml&amp;title=%5BI+Made+This%5D%3A+%3CTITLE%3E"><strong>Share your work</strong></a>. Blog posts, video, sample projects you used Powertools!</p>
+</details>
 <div class="admonition warning">
 <p class="admonition-title">Do not use this library in production</p>
 <p><strong>AWS Lambda Powertools for .NET is currently released in preview</strong> and is intended strictly for feedback purposes only. This version is not stable, and significant breaking changes might incur as part of the upcoming production-ready release.</p>
 <p>Your support is much appreciated. If you encounter any problems, <a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/issues/new/choose">please raise an issue</a>.</p>
 <p><strong>Do not use this library for production workloads.</strong></p>
 </div>
-<h2 id="available-powertools-libraries">Available Powertools libraries<a class="headerlink" href="#available-powertools-libraries" title="Permanent link">&para;</a></h2>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>Core utilities such as Tracing, Logging, and Metrics will be available across all Lambda Powertools languages. Additional utilities are subjective to each language ecosystem and customer demand.</p>
 <table>
 <thead>
 <tr>
@@ -655,7 +660,7 @@
 </ul>
 <h3 id="sam-cli-custom-template">SAM CLI custom template<a class="headerlink" href="#sam-cli-custom-template" title="Permanent link">&para;</a></h3>
 <p>We have provided you with a custom template for the Serverless Application Model (AWS SAM) command-line interface (CLI). This generates a starter project that allows you to interactively choose the Powertools features that enables you to include in your project.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sam init --location https://github.com/aws-samples/cookiecutter-aws-sam-dotnet
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sam<span class="w"> </span>init<span class="w"> </span>--location<span class="w"> </span>https://github.com/aws-samples/cookiecutter-aws-sam-dotnet
 </code></pre></div></td></tr></table></div>
 <p>To use the SAM CLI, you need the following tools.</p>
 <ul>
@@ -663,28 +668,27 @@
 <li>.NET 6.0 (LTS)  - <a href="https://www.microsoft.com/net/download">Install .NET 6.0</a></li>
 <li>Docker - <a href="https://hub.docker.com/search/?type=edition&amp;offering=community">Install Docker community edition</a></li>
 </ul>
-<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>We have provided a few examples that should you how to use the each of the core Powertools features.</p>
 <ul>
 <li><a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/tree/main/examples/Tracing" target="_blank">Tracing</a> example</li>
 <li><a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/tree/main/examples/Logging/" target="_blank">Logging</a> example</li>
 <li><a href="https://github.com/awslabs/aws-lambda-powertools-dotnet/tree/main/examples/Metrics/" target="_blank">Metrics</a> example</li>
 </ul>
-<h2 id="other-members-of-the-aws-lambda-powertools-family">Other members of the AWS Lambda Powertools family<a class="headerlink" href="#other-members-of-the-aws-lambda-powertools-family" title="Permanent link">&para;</a></h2>
-<p>Not using .NET? No problem we have you covered. Here are the other members of the AWS Lambda Powertools family:</p>
-<ul>
-<li><a href="https://github.com/awslabs/aws-lambda-powertools-python">AWS Lambda Powertools for Python</a></li>
-<li><a href="https://github.com/awslabs/aws-lambda-powertools-java">AWS Lambda Powertools for Java</a></li>
-<li><a href="https://github.com/awslabs/aws-lambda-powertools-typescript">AWS Lambda Powertools for TypeScript</a></li>
-</ul>
 <h2 id="connect">Connect<a class="headerlink" href="#connect" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>AWS Developers Slack</strong>: <code>#lambda-powertools</code> - <a href="https://join.slack.com/t/awsdevelopers/shared_invite/zt-yryddays-C9fkWrmguDv0h2EEDzCqvw" target="_blank">Invite, if you don't have an account</a></li>
+<li><strong>AWS Lambda Powertools on Discord</strong>: <code>#dotnet</code> - <strong><a href="https://discord.gg/B8zZKbbyET" target="_blank">Invite link</a></strong></li>
 <li><strong>Email</strong>: aws-lambda-powertools-feedback@amazon.com</li>
 </ul>
-<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<h2 id="tenets">Tenets<a class="headerlink" href="#tenets" title="Permanent link">&para;</a></h2>
+<p>These are our core principles to guide our decision making.</p>
 <ul>
-<li>Credits for the Lambda Powertools idea go to <a href="https://github.com/getndazn" target="_blank">DAZN</a> and their <a href="https://github.com/getndazn/dazn-lambda-powertools/" target="_blank">DAZN Lambda Powertools</a>.</li>
+<li><strong>AWS Lambda only</strong>. We optimize for AWS Lambda function environments and supported runtimes only. Utilities might work with web frameworks and non-Lambda environments, though they are not officially supported.</li>
+<li><strong>Eases the adoption of best practices</strong>. The main priority of the utilities is to facilitate best practices adoption, as defined in the AWS Well-Architected Serverless Lens; all other functionality is optional.</li>
+<li><strong>Keep it lean</strong>. Additional dependencies are carefully considered for security and ease of maintenance, and prevent negatively impacting startup time.</li>
+<li><strong>We strive for backwards compatibility</strong>. New features and changes should keep backwards compatibility. If a breaking change cannot be avoided, the deprecation and migration process should be clearly defined.</li>
+<li><strong>We work backwards from the community</strong>. We aim to strike a balance of what would work best for 80% of customers. Emerging practices are considered and discussed via Requests for Comment (RFCs)</li>
+<li><strong>Idiomatic</strong>. Utilities follow programming language idioms and language-specific best practices.</li>
 </ul>
 
   <hr>
@@ -692,7 +696,7 @@
   <small>
     
       Last update:
-      2022-08-03
+      2023-01-04
     
   </small>
 </div>
@@ -700,10 +704,12 @@
 
 
 
-              
-            </article>
-            
-          </div>
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
           <a href="#" class="md-top md-icon" data-md-component="top" hidden>
@@ -714,27 +720,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-      
-        
-        <a href="tenets/" class="md-footer__link md-footer__link--next" aria-label="Next: Our tenets" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Our tenets
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -761,10 +746,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.instant", "navigation.indexes", "navigation.tracking", "content.code.annotate"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.sections", "navigation.expand", "navigation.top", "navigation.instant", "navigation.indexes", "navigation.tracking", "content.code.annotate"], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.0bc13b87.min.js"></script>
+      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
       
         <script src="javascript/aws-amplify.min.js"></script>
       
