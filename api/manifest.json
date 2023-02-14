@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.LoggerProvider.html",
-          "hash": "Qtav0lDHitzCG2GFyDy+LvxmCskamxjEQwRK99PWUJw="
+          "hash": "y4ulEdaXu1lVMTfXKWU6CDF/r3CPG25kb9lq4dFu96g="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.html",
-          "hash": "e7c4Mhvk/maoJmBNWB+iAFaNQD9gxTj5DNSdxpnHblA="
+          "hash": "bHl193TCPZWk/JV2xthIDW6Irww3ILiwswgqv4D6o70="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerConfiguration.html",
-          "hash": "iwSu6IKrrnke3oMfMPPRiTg9AE/EvzbUxj2bp8CiKQo="
+          "hash": "xmmPzJyr3VV8XWl1i7opcHeylP4rQkOXat6Qc/DsTsg="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerExtensions.html",
-          "hash": "kX/1UIGHeWYkZgdqYWLz/iKcNSj+ikUI+5ya5G5eH/A="
+          "hash": "xA0MKRir3+ri7ZBTx62Ai2FLUPgaZi6gzgVOlOcXkGM="
         }
       },
       "is_incremental": false,
@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Logging.html",
-          "hash": "d05zYhw+duIEmVTcvnWEv1OJJY73RRTIBgc9t2GO0Rc="
+          "hash": "stXZEnWOhnTR4pBGJ8ZKObyWHNgODaZOS2X5hLmPCsQ="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Metrics.JsonNamingPolicyDecorator.html",
-          "hash": "xteUUWM7dUeq5SpE+/nRm6OWl/Cb5+CozxVdaQfYZ70="
+          "hash": "L2NTtv240q8GRB7zuXAjc7asls2mqBhhCEJUg49yjxA="
         }
       },
       "is_incremental": false,
