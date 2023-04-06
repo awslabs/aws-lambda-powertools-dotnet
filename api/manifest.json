@@ -1,0 +1,580 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/aws-lambda-powertools-dotnet/aws-lambda-powertools-dotnet/apidocs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.AspectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.AspectEventArgs.html",
+          "hash": "s32sOsQRPuJjq1rWD4TFFrIC4SjBR86uoeH4SE/M2ME="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.IMethodAspectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.IMethodAspectHandler.html",
+          "hash": "6IUfojGzfC2j/Nwo+sGIvhETknRT/WE6IpfaT7WDc0U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html",
+          "hash": "aubKXMJCMjUxGoyTxMUVsikhydke6dVtxZJ3wrp8F0U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.ISystemWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.ISystemWrapper.html",
+          "hash": "iId7GtaIN3u3PdfaSVbF+rM0ULUon1dsAS2u+Q4rTJo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.MethodAspectAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.MethodAspectAttribute.html",
+          "hash": "L7NuhILMhv1kHBtJ4QgBpXYbwnG3WEOccd7Msqa4g7w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.PascalCaseNamingPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.PascalCaseNamingPolicy.html",
+          "hash": "WSkn1829hHbo9BqgJRLa5zz3rr37DGP8K/iy0coUbA8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.html",
+          "hash": "YjgZz7uD1WruCrMHZqqFc0RDu6kVy8qic4k8OY1pozY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.SnakeCaseNamingPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.SnakeCaseNamingPolicy.html",
+          "hash": "x4WV+Duwx0jqMQ8/7Swu8dBmfRIcY7RrSL1Mcph10Ww="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.StringUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.StringUtils.html",
+          "hash": "l6GEYb0KkUCoIXX9lUJUZ4Wvzbxi+Sd5i47lQ5dH1Kg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.SystemWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.SystemWrapper.html",
+          "hash": "AkPrt1OUzFCs9yqAHTQTKFkTeDhkR64GVzDnQCyqJ8A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.UniversalWrapperAspect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.UniversalWrapperAspect.html",
+          "hash": "N5wizDCUCv0Rc9j7Jgtrgc+abvId8nFW0AY0QlyM1v8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.UniversalWrapperAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.UniversalWrapperAttribute.html",
+          "hash": "sc1yk4OnP4IETk1Mn9V8hE0Qtwn8qx7bgH5OZbD0v2c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.html",
+          "hash": "hgn7OWeq4iwDoht8SpUsAySEE9YnSHky2xaSF5GOdhI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.CorrelationIdPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.CorrelationIdPaths.html",
+          "hash": "ILDuLq1Na5GttST8noj6PlSA9BpzfwiY0GCrBWHIzZs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.Converters.ConstantClassConverter.html",
+          "hash": "9Ey/9sxJDXI7Mv0Hg99AyE3DYci+XITPvQ91bay3RY4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.Converters.html",
+          "hash": "waLVPUiAB/Efv+xRDZvosyWh+ggIRfvetT8+VLDEWz8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.LoggerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.LoggerProvider.html",
+          "hash": "7T0kIugCF31oVNEOurz687gH7dmXKeny9cAT/iIJ39Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.Internal.html",
+          "hash": "SNa85Sk2EXJ+LSQN3IliCZk7DnXkhG+zqAfH0BFqXTU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.Logger.html",
+          "hash": "DpqHtJASQvpExicDz2j17k38VjAS+XfzFXwpAaGkxnI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerConfiguration.html",
+          "hash": "dNgQQc98EYerD01ryHkZK/NiolQcPw9JGFe5Ck1YPyM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerExtensions.html",
+          "hash": "WL6OmjNo7GPd+4QeDYusj2WwM6pQ+KVRkn3eL+G/l60="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerOutputCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggerOutputCase.html",
+          "hash": "B9oyEXmKeizko/kMtspe27s359LyWYcgyEz7yua4piU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.LoggingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.LoggingAttribute.html",
+          "hash": "awY4lB2Z1o8NneEnzeE8DIGsmdP5fJ7trbVbzJK9eN4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Logging.html",
+          "hash": "Qe8dJNZOTPtl2WLUE+2Fgz/9cQeF2OL0wX2PWWyYFz8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.DimensionSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.DimensionSet.html",
+          "hash": "+2vVevtzJ2nxyYcnT+KG9Jjy9VaJnIohBv1FYWjjtIQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.IMetrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.IMetrics.html",
+          "hash": "DzVz3Y4n1R5nu3hJHyOBZBNvpABV9qv3FVzIay7h8Fw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.JsonNamingPolicyDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.JsonNamingPolicyDecorator.html",
+          "hash": "DTY3+ckIaM2PyUZyKPJM+C4gwqIaQhRbaHEj6MPlgCs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.Metadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.Metadata.html",
+          "hash": "cdjcihn6Bd6mJ/sZBaE+b/Do2+qH8bbjN3Stejrmjyk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricDefinition.html",
+          "hash": "BoRKfLXISLH0vkYDd0XX97QMGtqHSQSLRdUveGywpjw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricDirective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricDirective.html",
+          "hash": "It38NR21oA1iBQSHlyW+yU+rhglDeFM4carUik2a3wA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricUnit.html",
+          "hash": "xgoh5SIaOuwhRsFUVFlrH9Zub6AdGq/WLGyg0mDvKUo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.Metrics.html",
+          "hash": "5lxDC3wd+XrGKmeTJQfbFXKBvztXcdFULAm1kpajd0g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricsAttribute.html",
+          "hash": "u2rfEyMaDVJY6xJlHD3Qj8wOGfL/wBlhZgEe5upb6Yw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricsContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.MetricsContext.html",
+          "hash": "kyIiGcKJ4kNta204PBvaJWQZwmJcnF6g6ivsDGdo7Qc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.RootNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.RootNode.html",
+          "hash": "WYHrdZUwiWSfeGQRgYBoHKcC2/9PGDucGKS7UrUhs4o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.SchemaValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.SchemaValidationException.html",
+          "hash": "ZQJL+MC4ikV+cYTJfDLGrokW0hfcinvHfTEIE8MgGlc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.StringEnumConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.StringEnumConverter.html",
+          "hash": "jiL6b0zMpYcF2/INGvVFG0aHWHeZay/5TcjqEA4hOK4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.UnixMillisecondDateTimeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.UnixMillisecondDateTimeConverter.html",
+          "hash": "rwdkWW51Sgdr6LRwfgzTGODTAHA7QjV5f4yh4rd8b7w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Metrics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Metrics.html",
+          "hash": "ssbRHrNEHs9L8GY16ZPWX9HRJaEz66Xu9/8s56K7L44="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.Internal.IXRayRecorder.html",
+          "hash": "A4+FcqAioGft3tZKel/2lZ4jb0xX5LmV1z5qLvfEYjs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.Internal.html",
+          "hash": "DIRs1FPey89AyZvrx6zxJeWJEqUuGFX3cqphw6KgUB4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.Tracing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.Tracing.html",
+          "hash": "gNEc7kzMg/kQr4LaYPPmVmUtj0GTSoarRBaYCgYsvHM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.TracingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.TracingAttribute.html",
+          "hash": "BgL8R1K80rFdUycvxOZ8TBgrEJtoMUyfIc2tmCDYoWU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.TracingCaptureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.TracingCaptureMode.html",
+          "hash": "UJrotJ8yRwidTN9+CVqJqgfzSIb4egf69FLPsLxL/8w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Tracing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Tracing.html",
+          "hash": "YwLkfKUFBqqQwAe5FxL2DdVJL9bz7f1QQJK511Zucno="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "r4TFK+TKRy1G2Y611pl1qrwHkwD3Ie+waPHAtZhntCk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "MxAhOghkHxhnq7ssGYV6V1Z3bblMDLw00rn718b0fuY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/img.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "ldbV4S+TjnjNdGRIMO2g4U2hfROpfM5rwPWLsOWc+oM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+m/L0j+sYnV5jMjUm0rrbu0yEDFN5FHNlIf3hBhsP+8="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
