@@ -19,7 +19,7 @@
         <link rel="next" href="../tracing/">
       
       <link rel="icon" href="../../media/aws-logo-light.svg">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.113286f1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a7fce14.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -105,7 +105,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Lambda Powertools .NET" class="md-header__button md-logo" aria-label="Lambda Powertools .NET" data-md-component="logo">
       
@@ -810,7 +812,7 @@
 <span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">AWS.Lambda.Powertools.Metrics</span><span class="p">;</span>
 
 <span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Function</span><span class="w"> </span><span class="p">{</span>
-<span class="hll"><span class="w">  </span><span class="n">Metrics</span><span class="p">(</span><span class="n">Namespace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;MyCompanyEcommerce&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ShoppingCartService&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">CaptureColdStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">,</span><span class="w"> </span><span class="n">RaiseOnEmptyMetrics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">)]</span>
+<span class="hll"><span class="w">  </span><span class="na">[Metrics(Namespace = &quot;MyCompanyEcommerce&quot;, Service = &quot;ShoppingCartService&quot;, CaptureColdStart = true, RaiseOnEmptyMetrics = true)]</span>
 </span><span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="w">    </span><span class="p">...</span>
@@ -863,7 +865,7 @@
 <span class="w">  </span><span class="na">[Metrics(Namespace = &quot;ExampleApplication&quot;, Service = &quot;Booking&quot;)]</span>
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">);</span>
+<span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
 </span><span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -887,7 +889,7 @@
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddDimension</span><span class="p">(</span><span class="s">&quot;Environment&quot;</span><span class="p">,</span><span class="s">&quot;Prod&quot;</span><span class="p">);</span>
-</span><span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">);</span>
+</span><span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
 </span><span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -941,7 +943,7 @@
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">SetDefaultDimensions</span><span class="p">(</span><span class="n">_defaultDimensions</span><span class="p">);</span>
-</span><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">);</span>
+</span><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -970,7 +972,7 @@
 <span class="w">  </span><span class="na">[Metrics(Namespace = &quot;ExampleApplication&quot;, Service = &quot;Booking&quot;)]</span>
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">);</span>
+<span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
 </span><span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
@@ -1117,7 +1119,7 @@
 <span class="w">  </span><span class="na">[Metrics(Namespace = ExampleApplication, Service = &quot;Booking&quot;)]</span>
 <span class="w">  </span><span class="k">public</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">APIGatewayProxyResponse</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">APIGatewayProxyRequest</span><span class="w"> </span><span class="n">apigProxyEvent</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
 <span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetric</span><span class="p">(</span><span class="s">&quot;SuccessfulBooking&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">);</span>
 <span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">AddMetadata</span><span class="p">(</span><span class="s">&quot;BookingId&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;683EEB2D-B2F3-4075-96EE-788E6E2EED45&quot;</span><span class="p">);</span>
 </span><span class="w">    </span><span class="p">...</span>
 </code></pre></div></td></tr></table></div>
@@ -1211,7 +1213,7 @@
 <span class="hll"><span class="w">    </span><span class="n">Metrics</span><span class="p">.</span><span class="n">PushSingleMetric</span><span class="p">(</span>
 </span><span class="hll"><span class="w">                </span><span class="n">metricName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ColdStart&quot;</span><span class="p">,</span>
 </span><span class="hll"><span class="w">                </span><span class="k">value</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
-</span><span class="hll"><span class="w">                </span><span class="n">unit</span><span class="p">:</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">COUNT</span><span class="p">,</span>
+</span><span class="hll"><span class="w">                </span><span class="n">unit</span><span class="p">:</span><span class="w"> </span><span class="n">MetricUnit</span><span class="p">.</span><span class="n">Count</span><span class="p">,</span>
 </span><span class="hll"><span class="w">                </span><span class="n">nameSpace</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ExampleApplication&quot;</span><span class="p">,</span>
 </span><span class="hll"><span class="w">                </span><span class="n">service</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Booking&quot;</span><span class="p">,</span>
 </span><span class="hll"><span class="w">                </span><span class="n">defaultDimensions</span><span class="p">:</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dictionary</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="o">&gt;</span>
@@ -1229,7 +1231,7 @@
   <small>
     
       Last update:
-      2023-01-04
+      2023-03-27
     
   </small>
 </div>
@@ -1245,10 +1247,10 @@
           
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
-          </a>
+          </button>
         
       </main>
       
@@ -1282,7 +1284,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.sections", "navigation.expand", "navigation.top", "navigation.instant", "navigation.indexes", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
       
         <script src="../../javascript/aws-amplify.min.js"></script>
       
