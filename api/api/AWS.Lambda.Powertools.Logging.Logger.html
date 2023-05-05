@@ -453,6 +453,42 @@
     </tbody>
   </table>
   <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception)">Log(LogLevel, Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(LogLevel logLevel, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Exception__examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.String,System.Object[])">Log(LogLevel, Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
 </div>
@@ -497,42 +533,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception)">Log(LogLevel, Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log(LogLevel logLevel, Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Exception__examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, exception)</p>
-
   <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log_Microsoft_Extensions_Logging_LogLevel_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log(Microsoft.Extensions.Logging.LogLevel,System.Object)">Log(LogLevel, object)</h4>
   <div class="markdown level1 summary"><p>Formats and writes a log message as JSON at the specified log level.</p>
@@ -604,350 +604,6 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
         <td><span class="parametername">args</span></td>
         <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, EventId, Exception, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, EventId eventId, Exception exception, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
-        <td><span class="parametername">eventId</span></td>
-        <td><p>The event id associated with the log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, EventId, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, EventId eventId, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
-        <td><span class="parametername">eventId</span></td>
-        <td><p>The event id associated with the log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, Exception, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, Exception exception, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId___0_System_Exception_System_Func___0_System_Exception_System_String__" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">Log&lt;TState&gt;(LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, string&gt;)</h4>
-  <div class="markdown level1 summary"><p>Writes a log entry.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;TState&gt;(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func&lt;TState, Exception, string&gt; formatter)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
-        <td><span class="parametername">eventId</span></td>
-        <td><p>Id of the event.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">TState</span></td>
-        <td><span class="parametername">state</span></td>
-        <td><p>The entry to be written. Can be also an object.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception related to this entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td><span class="parametername">formatter</span></td>
-        <td><p>Function to create a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> message of the <code class="paramref">state</code>
-and <code class="paramref">exception</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TState</span></td>
-        <td><p>The type of the object to be written.</p>
 </td>
       </tr>
     </tbody>
@@ -1045,6 +701,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogCritical(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical(System.Exception)">LogCritical(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogCritical(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception__examples">Examples</h5>
+  <p>logger.LogCritical(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical(System.Exception,System.String,System.Object[])">LogCritical(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes a critical log message.</p>
 </div>
@@ -1086,36 +772,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogCritical(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical(System.Exception)">LogCritical(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an critical log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogCritical(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Exception__examples">Examples</h5>
-  <p>logger.LogCritical(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogCritical_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogCritical(System.Object)">LogCritical(object)</h4>
@@ -1529,6 +1185,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogDebug(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug(System.Exception)">LogDebug(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an debug log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception__examples">Examples</h5>
+  <p>logger.LogDebug(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug(System.Exception,System.String,System.Object[])">LogDebug(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes a debug log message.</p>
 </div>
@@ -1570,36 +1256,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogDebug(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug(System.Exception)">LogDebug(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an debug log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogDebug(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Exception__examples">Examples</h5>
-  <p>logger.LogDebug(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogDebug_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogDebug(System.Object)">LogDebug(object)</h4>
@@ -2013,6 +1669,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogError(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogError_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError(System.Exception)">LogError(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception__examples">Examples</h5>
+  <p>logger.LogError(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogError_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError(System.Exception,System.String,System.Object[])">LogError(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
 </div>
@@ -2054,36 +1740,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogError(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogError_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError(System.Exception)">LogError(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an error log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogError(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Exception__examples">Examples</h5>
-  <p>logger.LogError(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogError_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogError_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogError(System.Object)">LogError(object)</h4>
@@ -2497,6 +2153,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogInformation(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation(System.Exception)">LogInformation(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an information log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInformation(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception__examples">Examples</h5>
+  <p>logger.LogInformation(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation(System.Exception,System.String,System.Object[])">LogInformation(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes an informational log message.</p>
 </div>
@@ -2538,36 +2224,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogInformation(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation(System.Exception)">LogInformation(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an information log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogInformation(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Exception__examples">Examples</h5>
-  <p>logger.LogInformation(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogInformation_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogInformation(System.Object)">LogInformation(object)</h4>
@@ -2981,6 +2637,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogTrace(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace(System.Exception)">LogTrace(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an trace log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogTrace(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception__examples">Examples</h5>
+  <p>logger.LogTrace(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace(System.Exception,System.String,System.Object[])">LogTrace(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes a trace log message.</p>
 </div>
@@ -3022,36 +2708,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogTrace(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace(System.Exception)">LogTrace(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an trace log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogTrace(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Exception__examples">Examples</h5>
-  <p>logger.LogTrace(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogTrace_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogTrace(System.Object)">LogTrace(object)</h4>
@@ -3465,6 +3121,36 @@ and <code class="paramref">exception</code>.</p>
   <p>Logger.LogWarning(0, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning(System.Exception)">LogWarning(Exception)</h4>
+  <div class="markdown level1 summary"><p>Formats and writes an warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarning(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception__examples">Examples</h5>
+  <p>logger.LogWarning(exception)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning(System.Exception,System.String,System.Object[])">LogWarning(Exception, string, params object[])</h4>
   <div class="markdown level1 summary"><p>Formats and writes a warning log message.</p>
 </div>
@@ -3506,36 +3192,6 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception_System_String_System_Object____examples">Examples</h5>
   <p>Logger.LogWarning(exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning(System.Exception)">LogWarning(Exception)</h4>
-  <div class="markdown level1 summary"><p>Formats and writes an warning log message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LogWarning(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Exception__examples">Examples</h5>
-  <p>logger.LogWarning(exception)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning_System_Object_" data-uid="AWS.Lambda.Powertools.Logging.Logger.LogWarning(System.Object)">LogWarning(object)</h4>
@@ -3855,6 +3511,350 @@ and <code class="paramref">exception</code>.</p>
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_Logger_LogWarning__1___0_System_String_System_Object____examples">Examples</h5>
   <p>logger.LogWarning(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel_Microsoft_Extensions_Logging_EventId___0_System_Exception_System_Func___0_System_Exception_System_String__" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">Log&lt;TState&gt;(LogLevel, EventId, TState, Exception, Func&lt;TState, Exception, string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a log entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;TState&gt;(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func&lt;TState, Exception, string&gt; formatter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>Id of the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The entry to be written. Can be also an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception related to this entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TState, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">formatter</span></td>
+        <td><p>Function to create a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> message of the <code class="paramref">state</code>
+and <code class="paramref">exception</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td><p>The type of the object to be written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, EventId, Exception, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, EventId eventId, Exception exception, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, EventId, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, EventId eventId, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, Exception, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, Exception exception, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_Logger_Log_" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.Logger.Log``1(Microsoft.Extensions.Logging.LogLevel,``0,System.String,System.Object[])">Log&lt;T&gt;(LogLevel, T, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(LogLevel logLevel, T extraKeys, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_Logger_Log__1_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
 
   <a id="AWS_Lambda_Powertools_Logging_Logger_RemoveKeys_" data-uid="AWS.Lambda.Powertools.Logging.Logger.RemoveKeys*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_Logger_RemoveKeys_System_String___" data-uid="AWS.Lambda.Powertools.Logging.Logger.RemoveKeys(System.String[])">RemoveKeys(params string[])</h4>

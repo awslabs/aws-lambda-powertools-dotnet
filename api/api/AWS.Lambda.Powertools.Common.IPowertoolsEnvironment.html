@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ISystemWrapper
+    <title>Interface IPowertoolsEnvironment
  | AWS Lambda Powertools for .NET </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ISystemWrapper
+    <meta name="title" content="Interface IPowertoolsEnvironment
  | AWS Lambda Powertools for .NET ">
     <meta name="generator" content="docfx ">
   
@@ -78,185 +78,31 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment">
 
 
 
-  <h1 id="AWS_Lambda_Powertools_Common_ISystemWrapper" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper" class="text-break">Interface ISystemWrapper
+  <h1 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment" class="text-break">Interface IPowertoolsEnvironment
 </h1>
-  <div class="markdown level0 summary"><p>Interface ISystemWrapper</p>
+  <div class="markdown level0 summary"><p>Interface for PowertoolsEnvironment</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AWS.html">AWS</a>.<a class="xref" href="AWS.Lambda.html">Lambda</a>.<a class="xref" href="AWS.Lambda.Powertools.html">Powertools</a>.<a class="xref" href="AWS.Lambda.Powertools.Common.html">Common</a></h6>
   <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Common.dll</h6>
-  <h5 id="AWS_Lambda_Powertools_Common_ISystemWrapper_syntax">Syntax</h5>
+  <h5 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ISystemWrapper</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IPowertoolsEnvironment</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_GetEnvironmentVariable_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.GetEnvironmentVariable*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_GetEnvironmentVariable_System_String_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.GetEnvironmentVariable(System.String)">GetEnvironmentVariable(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the environment variable.</p>
+  <a id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyName_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyName__1___0_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName``1(``0)">GetAssemblyName&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Get the calling Type Assembly Name</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetEnvironmentVariable(string variable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">variable</span></td>
-        <td><p>The variable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>System.String.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_GetRandom_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.GetRandom*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_GetRandom" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.GetRandom">GetRandom()</h4>
-  <div class="markdown level1 summary"><p>Gets random number</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">double GetRandom()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><p>System.Double.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_Log_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_Log_System_String_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.Log(System.String)">Log(string)</h4>
-  <div class="markdown level1 summary"><p>Logs the specified value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Log(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_LogLine_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.LogLine*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_LogLine_System_String_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.LogLine(System.String)">LogLine(string)</h4>
-  <div class="markdown level1 summary"><p>Logs the line.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogLine(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_SetEnvironmentVariable_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_SetEnvironmentVariable_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable(System.String,System.String)">SetEnvironmentVariable(string, string)</h4>
-  <div class="markdown level1 summary"><p>Sets the environment variable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetEnvironmentVariable(string variable, string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">variable</span></td>
-        <td><p>The variable.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AWS_Lambda_Powertools_Common_ISystemWrapper_SetExecutionEnvironment_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_ISystemWrapper_SetExecutionEnvironment__1___0_" data-uid="AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment``1(``0)">SetExecutionEnvironment&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"><p>Sets the execution Environment Variable (AWS_EXECUTION_ENV)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetExecutionEnvironment&lt;T&gt;(T type)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetAssemblyName&lt;T&gt;(T type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -275,6 +121,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Assembly Name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -287,6 +149,137 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyVersion_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyVersion__1___0_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion``1(``0)">GetAssemblyVersion&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Get the calling Type Assembly Version</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetAssemblyVersion&lt;T&gt;(T type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Assembly Version in the Major.Minor.Build format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetEnvironmentVariable_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetEnvironmentVariable_System_String_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable(System.String)">GetEnvironmentVariable(string)</h4>
+  <div class="markdown level1 summary"><p>Get environment variable by variable name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetEnvironmentVariable(string variableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Environment variable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_SetEnvironmentVariable_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_SetEnvironmentVariable_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable(System.String,System.String)">SetEnvironmentVariable(string, string)</h4>
+  <div class="markdown level1 summary"><p>Set environment variable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEnvironmentVariable(string variableName, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Setting this to null will remove environment variable with that name</p>
+</td>
       </tr>
     </tbody>
   </table>

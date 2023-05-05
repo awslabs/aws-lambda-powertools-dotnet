@@ -208,306 +208,6 @@
   <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel_System_Object__examples">Examples</h5>
   <p>logger.Log(LogLevel.Information, new {User = user, Address = address})</p>
 
-  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, Exception, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, Exception exception, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
-        <td><span class="parametername">eventId</span></td>
-        <td><p>The event id associated with the log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
-        <td><span class="parametername">eventId</span></td>
-        <td><p>The event id associated with the log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, Exception, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, Exception exception, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
-
-  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
-  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, string, params object[])</h4>
-  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, string message, params object[] args) where T : class</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
-        <td><span class="parametername">logLevel</span></td>
-        <td><p>Entry will be written on this level.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">extraKeys</span></td>
-        <td><p>Additional keys will be appended to the log entry.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>An object array that contains zero or more objects to format.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object____examples">Examples</h5>
-  <p>logger.Log(LogLevel.Information, extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
-
   <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical*"></a>
   <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogCritical_Microsoft_Extensions_Logging_ILogger_System_Exception_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.LogCritical(Microsoft.Extensions.Logging.ILogger,System.Exception)">LogCritical(ILogger, Exception)</h4>
   <div class="markdown level1 summary"><p>Formats and writes an critical log message.</p>
@@ -2595,6 +2295,306 @@
   </table>
   <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_LogWarning__1_Microsoft_Extensions_Logging_ILogger___0_System_String_System_Object____examples">Examples</h5>
   <p>logger.LogWarning(extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, Exception, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, Exception exception, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, EventId, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, EventId eventId, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.eventid">EventId</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td><p>The event id associated with the log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_Microsoft_Extensions_Logging_EventId_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, 0, &quot;Processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,System.Exception,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, Exception, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, Exception exception, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_Exception_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, exception, &quot;Error while processing request from {Address}&quot;, address)</p>
+
+  <a id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log_" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log*"></a>
+  <h4 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object___" data-uid="AWS.Lambda.Powertools.Logging.LoggerExtensions.Log``1(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Logging.LogLevel,``0,System.String,System.Object[])">Log&lt;T&gt;(ILogger, LogLevel, T, string, params object[])</h4>
+  <div class="markdown level1 summary"><p>Formats and writes a log message at the specified log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log&lt;T&gt;(this ILogger logger, LogLevel logLevel, T extraKeys, string message, params object[] args) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> to write to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel">LogLevel</a></td>
+        <td><span class="parametername">logLevel</span></td>
+        <td><p>Entry will be written on this level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">extraKeys</span></td>
+        <td><p>Additional keys will be appended to the log entry.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Format string of the log message in message template format. Example: <code>&quot;User {User} logged in from {Address}&quot;</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An object array that contains zero or more objects to format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Logging_LoggerExtensions_Log__1_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Logging_LogLevel___0_System_String_System_Object____examples">Examples</h5>
+  <p>logger.Log(LogLevel.Information, extraKeys, &quot;Processing request from {Address}&quot;, address)</p>
 
 
 </article>

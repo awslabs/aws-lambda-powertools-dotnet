@@ -43,6 +43,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AWS.Lambda.Powertools.Common.ISystemWrapper.yml",
       "output": {
         ".html": {
@@ -77,6 +87,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html"
         }
       },
       "version": ""

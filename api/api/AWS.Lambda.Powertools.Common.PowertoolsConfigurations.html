@@ -301,6 +301,35 @@ Implements the <a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsCon
   <div class="seealso">
       <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
   </div>
+  <a id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel_" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LogLevel*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LogLevel">LogLevel</h4>
+  <div class="markdown level1 summary"><p>Gets the log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LogLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The log level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
+  </div>
   <a id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LoggerLogEvent_" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LoggerLogEvent*"></a>
   <h4 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LoggerLogEvent" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LoggerLogEvent">LoggerLogEvent</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether [logger log event].</p>
@@ -385,35 +414,6 @@ Implements the <a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsCon
     </tbody>
   </table>
   <h5 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LoggerSampleRate_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
-  </div>
-  <a id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel_" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LogLevel*"></a>
-  <h4 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.LogLevel">LogLevel</h4>
-  <div class="markdown level1 summary"><p>Gets the log level.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LogLevel { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>The log level.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_LogLevel_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
   </div>
@@ -743,6 +743,51 @@ Implements the <a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsCon
     </tbody>
   </table>
   <h5 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_GetEnvironmentVariableOrDefault_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
+  </div>
+  <a id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_SetExecutionEnvironment_" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_SetExecutionEnvironment__1___0_" data-uid="AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment``1(``0)">SetExecutionEnvironment&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Sets the execution Environment Variable (AWS_EXECUTION_ENV)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExecutionEnvironment&lt;T&gt;(T type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Common_PowertoolsConfigurations_SetExecutionEnvironment__1___0__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html">IPowertoolsConfigurations</a></div>
   </div>

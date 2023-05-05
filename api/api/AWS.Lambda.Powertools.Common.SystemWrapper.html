@@ -127,6 +127,38 @@ Implements the <a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SystemWrapper : ISystemWrapper</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="AWS_Lambda_Powertools_Common_SystemWrapper__ctor_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.#ctor*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_SystemWrapper__ctor_AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.#ctor(AWS.Lambda.Powertools.Common.IPowertoolsEnvironment)">SystemWrapper(IPowertoolsEnvironment)</h4>
+  <div class="markdown level1 summary"><p>Prevents a default instance of the <a class="xref" href="AWS.Lambda.Powertools.Common.SystemWrapper.html">SystemWrapper</a> class from being created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemWrapper(IPowertoolsEnvironment powertoolsEnvironment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html">IPowertoolsEnvironment</a></td>
+        <td><span class="parametername">powertoolsEnvironment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Common_SystemWrapper__ctor_AWS_Lambda_Powertools_Common_IPowertoolsEnvironment__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper.html">ISystemWrapper</a></div>
+  </div>
   <h3 id="properties">Properties
 </h3>
   <a id="AWS_Lambda_Powertools_Common_SystemWrapper_Instance_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.Instance*"></a>
@@ -295,6 +327,87 @@ Implements the <a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper
     </tbody>
   </table>
   <h5 id="AWS_Lambda_Powertools_Common_SystemWrapper_LogLine_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper.html">ISystemWrapper</a></div>
+  </div>
+  <a id="AWS_Lambda_Powertools_Common_SystemWrapper_SetEnvironmentVariable_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_SystemWrapper_SetEnvironmentVariable_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable(System.String,System.String)">SetEnvironmentVariable(string, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the environment variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnvironmentVariable(string variable, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td><p>The variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Common_SystemWrapper_SetEnvironmentVariable_System_String_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper.html">ISystemWrapper</a></div>
+  </div>
+  <a id="AWS_Lambda_Powertools_Common_SystemWrapper_SetExecutionEnvironment_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment*"></a>
+  <h4 id="AWS_Lambda_Powertools_Common_SystemWrapper_SetExecutionEnvironment__1___0_" data-uid="AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment``1(``0)">SetExecutionEnvironment&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Sets the execution Environment Variable (AWS_EXECUTION_ENV)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetExecutionEnvironment&lt;T&gt;(T type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AWS_Lambda_Powertools_Common_SystemWrapper_SetExecutionEnvironment__1___0__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="AWS.Lambda.Powertools.Common.ISystemWrapper.html">ISystemWrapper</a></div>
   </div>

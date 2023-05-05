@@ -332,6 +332,22 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.Service
   nameWithType: IPowertoolsConfigurations.Service
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment*
+  name: SetExecutionEnvironment
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_IPowertoolsConfigurations_SetExecutionEnvironment_
+  commentId: Overload:AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment
+  nameWithType: IPowertoolsConfigurations.SetExecutionEnvironment
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment``1(``0)
+  name: SetExecutionEnvironment<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_IPowertoolsConfigurations_SetExecutionEnvironment__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment``1(``0)
+  name.vb: SetExecutionEnvironment(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.SetExecutionEnvironment(Of T)(T)
+  nameWithType: IPowertoolsConfigurations.SetExecutionEnvironment<T>(T)
+  nameWithType.vb: IPowertoolsConfigurations.SetExecutionEnvironment(Of T)(T)
 - uid: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.TracerCaptureError
   name: TracerCaptureError
   href: api/AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_IPowertoolsConfigurations_TracerCaptureError
@@ -384,6 +400,76 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.IPowertoolsConfigurations.XRayTraceId
   nameWithType: IPowertoolsConfigurations.XRayTraceId
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment
+  name: IPowertoolsEnvironment
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html
+  commentId: T:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment
+  nameWithType: IPowertoolsEnvironment
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName*
+  name: GetAssemblyName
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyName_
+  commentId: Overload:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName
+  nameWithType: IPowertoolsEnvironment.GetAssemblyName
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName``1(``0)
+  name: GetAssemblyName<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyName__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName``1(``0)
+  name.vb: GetAssemblyName(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyName(Of T)(T)
+  nameWithType: IPowertoolsEnvironment.GetAssemblyName<T>(T)
+  nameWithType.vb: IPowertoolsEnvironment.GetAssemblyName(Of T)(T)
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion*
+  name: GetAssemblyVersion
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyVersion_
+  commentId: Overload:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion
+  nameWithType: IPowertoolsEnvironment.GetAssemblyVersion
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion``1(``0)
+  name: GetAssemblyVersion<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetAssemblyVersion__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion``1(``0)
+  name.vb: GetAssemblyVersion(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetAssemblyVersion(Of T)(T)
+  nameWithType: IPowertoolsEnvironment.GetAssemblyVersion<T>(T)
+  nameWithType.vb: IPowertoolsEnvironment.GetAssemblyVersion(Of T)(T)
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable(System.String)
+  name: GetEnvironmentVariable(string)
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetEnvironmentVariable_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable(System.String)
+  name.vb: GetEnvironmentVariable(String)
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable(string)
+  fullName.vb: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable(String)
+  nameWithType: IPowertoolsEnvironment.GetEnvironmentVariable(string)
+  nameWithType.vb: IPowertoolsEnvironment.GetEnvironmentVariable(String)
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable*
+  name: GetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_GetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.GetEnvironmentVariable
+  nameWithType: IPowertoolsEnvironment.GetEnvironmentVariable
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable(System.String,System.String)
+  name: SetEnvironmentVariable(string, string)
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_SetEnvironmentVariable_System_String_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable(System.String,System.String)
+  name.vb: SetEnvironmentVariable(String, String)
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable(string, string)
+  fullName.vb: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable(String, String)
+  nameWithType: IPowertoolsEnvironment.SetEnvironmentVariable(string, string)
+  nameWithType.vb: IPowertoolsEnvironment.SetEnvironmentVariable(String, String)
+- uid: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable*
+  name: SetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_SetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.IPowertoolsEnvironment.SetEnvironmentVariable
+  nameWithType: IPowertoolsEnvironment.SetEnvironmentVariable
 - uid: AWS.Lambda.Powertools.Common.ISystemWrapper
   name: ISystemWrapper
   href: api/AWS.Lambda.Powertools.Common.ISystemWrapper.html
@@ -451,6 +537,38 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.ISystemWrapper.LogLine
   nameWithType: ISystemWrapper.LogLine
+- uid: AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable(System.String,System.String)
+  name: SetEnvironmentVariable(string, string)
+  href: api/AWS.Lambda.Powertools.Common.ISystemWrapper.html#AWS_Lambda_Powertools_Common_ISystemWrapper_SetEnvironmentVariable_System_String_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable(System.String,System.String)
+  name.vb: SetEnvironmentVariable(String, String)
+  fullName: AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable(string, string)
+  fullName.vb: AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable(String, String)
+  nameWithType: ISystemWrapper.SetEnvironmentVariable(string, string)
+  nameWithType.vb: ISystemWrapper.SetEnvironmentVariable(String, String)
+- uid: AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable*
+  name: SetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.ISystemWrapper.html#AWS_Lambda_Powertools_Common_ISystemWrapper_SetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.ISystemWrapper.SetEnvironmentVariable
+  nameWithType: ISystemWrapper.SetEnvironmentVariable
+- uid: AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment*
+  name: SetExecutionEnvironment
+  href: api/AWS.Lambda.Powertools.Common.ISystemWrapper.html#AWS_Lambda_Powertools_Common_ISystemWrapper_SetExecutionEnvironment_
+  commentId: Overload:AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment
+  nameWithType: ISystemWrapper.SetExecutionEnvironment
+- uid: AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment``1(``0)
+  name: SetExecutionEnvironment<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.ISystemWrapper.html#AWS_Lambda_Powertools_Common_ISystemWrapper_SetExecutionEnvironment__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment``1(``0)
+  name.vb: SetExecutionEnvironment(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.ISystemWrapper.SetExecutionEnvironment(Of T)(T)
+  nameWithType: ISystemWrapper.SetExecutionEnvironment<T>(T)
+  nameWithType.vb: ISystemWrapper.SetExecutionEnvironment(Of T)(T)
 - uid: AWS.Lambda.Powertools.Common.MethodAspectAttribute
   name: MethodAspectAttribute
   href: api/AWS.Lambda.Powertools.Common.MethodAspectAttribute.html
@@ -726,6 +844,22 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.Service
   nameWithType: PowertoolsConfigurations.Service
+- uid: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment*
+  name: SetExecutionEnvironment
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_PowertoolsConfigurations_SetExecutionEnvironment_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment
+  nameWithType: PowertoolsConfigurations.SetExecutionEnvironment
+- uid: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment``1(``0)
+  name: SetExecutionEnvironment<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_PowertoolsConfigurations_SetExecutionEnvironment__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment``1(``0)
+  name.vb: SetExecutionEnvironment(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.SetExecutionEnvironment(Of T)(T)
+  nameWithType: PowertoolsConfigurations.SetExecutionEnvironment<T>(T)
+  nameWithType.vb: PowertoolsConfigurations.SetExecutionEnvironment(Of T)(T)
 - uid: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.TracerCaptureError
   name: TracerCaptureError
   href: api/AWS.Lambda.Powertools.Common.PowertoolsConfigurations.html#AWS_Lambda_Powertools_Common_PowertoolsConfigurations_TracerCaptureError
@@ -778,6 +912,89 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.PowertoolsConfigurations.XRayTraceId
   nameWithType: PowertoolsConfigurations.XRayTraceId
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment
+  name: PowertoolsEnvironment
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html
+  commentId: T:AWS.Lambda.Powertools.Common.PowertoolsEnvironment
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment
+  nameWithType: PowertoolsEnvironment
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName*
+  name: GetAssemblyName
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetAssemblyName_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName
+  nameWithType: PowertoolsEnvironment.GetAssemblyName
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName``1(``0)
+  name: GetAssemblyName<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetAssemblyName__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName``1(``0)
+  name.vb: GetAssemblyName(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyName(Of T)(T)
+  nameWithType: PowertoolsEnvironment.GetAssemblyName<T>(T)
+  nameWithType.vb: PowertoolsEnvironment.GetAssemblyName(Of T)(T)
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion*
+  name: GetAssemblyVersion
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetAssemblyVersion_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion
+  nameWithType: PowertoolsEnvironment.GetAssemblyVersion
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion``1(``0)
+  name: GetAssemblyVersion<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetAssemblyVersion__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion``1(``0)
+  name.vb: GetAssemblyVersion(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetAssemblyVersion(Of T)(T)
+  nameWithType: PowertoolsEnvironment.GetAssemblyVersion<T>(T)
+  nameWithType.vb: PowertoolsEnvironment.GetAssemblyVersion(Of T)(T)
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable(System.String)
+  name: GetEnvironmentVariable(string)
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetEnvironmentVariable_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable(System.String)
+  name.vb: GetEnvironmentVariable(String)
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable(string)
+  fullName.vb: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable(String)
+  nameWithType: PowertoolsEnvironment.GetEnvironmentVariable(string)
+  nameWithType.vb: PowertoolsEnvironment.GetEnvironmentVariable(String)
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable*
+  name: GetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_GetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.GetEnvironmentVariable
+  nameWithType: PowertoolsEnvironment.GetEnvironmentVariable
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance
+  name: Instance
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_Instance
+  commentId: P:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance
+  nameWithType: PowertoolsEnvironment.Instance
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance*
+  name: Instance
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_Instance_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.Instance
+  nameWithType: PowertoolsEnvironment.Instance
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable(System.String,System.String)
+  name: SetEnvironmentVariable(string, string)
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_SetEnvironmentVariable_System_String_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable(System.String,System.String)
+  name.vb: SetEnvironmentVariable(String, String)
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable(string, string)
+  fullName.vb: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable(String, String)
+  nameWithType: PowertoolsEnvironment.SetEnvironmentVariable(string, string)
+  nameWithType.vb: PowertoolsEnvironment.SetEnvironmentVariable(String, String)
+- uid: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable*
+  name: SetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.PowertoolsEnvironment.html#AWS_Lambda_Powertools_Common_PowertoolsEnvironment_SetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.PowertoolsEnvironment.SetEnvironmentVariable
+  nameWithType: PowertoolsEnvironment.SetEnvironmentVariable
 - uid: AWS.Lambda.Powertools.Common.SnakeCaseNamingPolicy
   name: SnakeCaseNamingPolicy
   href: api/AWS.Lambda.Powertools.Common.SnakeCaseNamingPolicy.html
@@ -857,6 +1074,25 @@ references:
   commentId: T:AWS.Lambda.Powertools.Common.SystemWrapper
   fullName: AWS.Lambda.Powertools.Common.SystemWrapper
   nameWithType: SystemWrapper
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.#ctor(AWS.Lambda.Powertools.Common.IPowertoolsEnvironment)
+  name: SystemWrapper(IPowertoolsEnvironment)
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper__ctor_AWS_Lambda_Powertools_Common_IPowertoolsEnvironment_
+  commentId: M:AWS.Lambda.Powertools.Common.SystemWrapper.#ctor(AWS.Lambda.Powertools.Common.IPowertoolsEnvironment)
+  name.vb: New(IPowertoolsEnvironment)
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SystemWrapper(AWS.Lambda.Powertools.Common.IPowertoolsEnvironment)
+  fullName.vb: AWS.Lambda.Powertools.Common.SystemWrapper.New(AWS.Lambda.Powertools.Common.IPowertoolsEnvironment)
+  nameWithType: SystemWrapper.SystemWrapper(IPowertoolsEnvironment)
+  nameWithType.vb: SystemWrapper.New(IPowertoolsEnvironment)
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.#ctor*
+  name: SystemWrapper
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper__ctor_
+  commentId: Overload:AWS.Lambda.Powertools.Common.SystemWrapper.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SystemWrapper
+  fullName.vb: AWS.Lambda.Powertools.Common.SystemWrapper.New
+  nameWithType: SystemWrapper.SystemWrapper
+  nameWithType.vb: SystemWrapper.New
 - uid: AWS.Lambda.Powertools.Common.SystemWrapper.GetEnvironmentVariable(System.String)
   name: GetEnvironmentVariable(string)
   href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper_GetEnvironmentVariable_System_String_
@@ -931,6 +1167,38 @@ references:
   isSpec: "True"
   fullName: AWS.Lambda.Powertools.Common.SystemWrapper.LogLine
   nameWithType: SystemWrapper.LogLine
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable(System.String,System.String)
+  name: SetEnvironmentVariable(string, string)
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper_SetEnvironmentVariable_System_String_System_String_
+  commentId: M:AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable(System.String,System.String)
+  name.vb: SetEnvironmentVariable(String, String)
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable(string, string)
+  fullName.vb: AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable(String, String)
+  nameWithType: SystemWrapper.SetEnvironmentVariable(string, string)
+  nameWithType.vb: SystemWrapper.SetEnvironmentVariable(String, String)
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable*
+  name: SetEnvironmentVariable
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper_SetEnvironmentVariable_
+  commentId: Overload:AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SetEnvironmentVariable
+  nameWithType: SystemWrapper.SetEnvironmentVariable
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment*
+  name: SetExecutionEnvironment
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper_SetExecutionEnvironment_
+  commentId: Overload:AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment
+  isSpec: "True"
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment
+  nameWithType: SystemWrapper.SetExecutionEnvironment
+- uid: AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment``1(``0)
+  name: SetExecutionEnvironment<T>(T)
+  href: api/AWS.Lambda.Powertools.Common.SystemWrapper.html#AWS_Lambda_Powertools_Common_SystemWrapper_SetExecutionEnvironment__1___0_
+  commentId: M:AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment``1(``0)
+  name.vb: SetExecutionEnvironment(Of T)(T)
+  fullName: AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment<T>(T)
+  fullName.vb: AWS.Lambda.Powertools.Common.SystemWrapper.SetExecutionEnvironment(Of T)(T)
+  nameWithType: SystemWrapper.SetExecutionEnvironment<T>(T)
+  nameWithType.vb: SystemWrapper.SetExecutionEnvironment(Of T)(T)
 - uid: AWS.Lambda.Powertools.Common.UniversalWrapperAspect
   name: UniversalWrapperAspect
   href: api/AWS.Lambda.Powertools.Common.UniversalWrapperAspect.html
