@@ -1,0 +1,33 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/runner/work/aws-lambda-powertools-dotnet/aws-lambda-powertools-dotnet/apidocs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/img.svg"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
