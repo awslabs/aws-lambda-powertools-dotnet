@@ -1,0 +1,1035 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SsmProvider
+ | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SsmProvider
+ | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider">
+
+
+
+  <h1 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider" class="text-break">Class SsmProvider
+</h1>
+  <div class="markdown level0 summary"><p>Provider to retrieve parameter values from AWS Systems Manager Parameter Store.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html">ParameterProvider</a></div>
+    <div class="level2"><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html">ParameterProvider</a>&lt;<a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder.html">SsmProviderConfigurationBuilder</a>&gt;</div>
+    <div class="level3"><span class="xref">SsmProvider</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></div>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider-1.html">IParameterProvider</a>&lt;<a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder.html">SsmProviderConfigurationBuilder</a>&gt;</div>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider.html">IParameterProvider</a></div>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Internal.Provider.IParameterProviderConfigurableClient-3.html">IParameterProviderConfigurableClient</a>&lt;<a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a>, <span class="xref">IAmazonSimpleSystemsManagement</span>, <span class="xref">AmazonSimpleSystemsManagementConfig</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_1_WithMaxAge_System_TimeSpan_">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.WithMaxAge(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_1_ForceFetch">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.ForceFetch()</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_1_WithTransformation_AWS_Lambda_Powertools_Parameters_Transform_Transformation_">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.WithTransformation(Transformation)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_1_WithTransformation_AWS_Lambda_Powertools_Parameters_Transform_ITransformer_">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.WithTransformation(ITransformer)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider-1.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_1_WithTransformation_System_String_">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.WithTransformation(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Cache">ParameterProvider.Cache</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_CacheMode">ParameterProvider.CacheMode</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMaxAge_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetMaxAge(ParameterProviderConfiguration)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Get_System_String_">ParameterProvider.Get(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync_System_String_">ParameterProvider.GetAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Get__1_System_String_">ParameterProvider.Get&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync__1_System_String_">ParameterProvider.GetAsync&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultiple_System_String_">ParameterProvider.GetMultiple(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync_System_String_">ParameterProvider.GetMultipleAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultiple__1_System_String_">ParameterProvider.GetMultiple&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync__1_System_String_">ParameterProvider.GetMultipleAsync&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.html">AWS</a>.<a class="xref" href="AWS.Lambda.html">Lambda</a>.<a class="xref" href="AWS.Lambda.Powertools.html">Powertools</a>.<a class="xref" href="AWS.Lambda.Powertools.Parameters.html">Parameters</a>.<a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.html">SimpleSystemsManagement</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Parameters.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SsmProvider : ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;, ISsmProvider, IParameterProvider&lt;SsmProviderConfigurationBuilder&gt;, IParameterProvider, IParameterProviderConfigurableClient&lt;ISsmProvider, IAmazonSimpleSystemsManagement, AmazonSimpleSystemsManagementConfig&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_Amazon_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(Amazon.RegionEndpoint)">ConfigureClient(RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with the credentials loaded from the application's default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_Amazon_Runtime_AWSCredentials_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(Amazon.Runtime.AWSCredentials)">ConfigureClient(AWSCredentials)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(AWSCredentials credentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_Amazon_Runtime_AWSCredentials_Amazon_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">ConfigureClient(AWSCredentials, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(AWSCredentials credentials, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_Amazon_Runtime_AWSCredentials_Amazon_SimpleSystemsManagement_AmazonSimpleSystemsManagementConfig_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(Amazon.Runtime.AWSCredentials,Amazon.SimpleSystemsManagement.AmazonSimpleSystemsManagementConfig)">ConfigureClient(AWSCredentials, AmazonSimpleSystemsManagementConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(AWSCredentials credentials, AmazonSimpleSystemsManagementConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonSimpleSystemsManagementConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_Amazon_SimpleSystemsManagement_AmazonSimpleSystemsManagementConfig_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(Amazon.SimpleSystemsManagement.AmazonSimpleSystemsManagementConfig)">ConfigureClient(AmazonSimpleSystemsManagementConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with the credentials loaded from the application's default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(AmazonSimpleSystemsManagementConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AmazonSimpleSystemsManagementConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String)">ConfigureClient(string, string)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_Amazon_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String,Amazon.RegionEndpoint)">ConfigureClient(string, string, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_Amazon_SimpleSystemsManagement_AmazonSimpleSystemsManagementConfig_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String,Amazon.SimpleSystemsManagement.AmazonSimpleSystemsManagementConfig)">ConfigureClient(string, string, AmazonSimpleSystemsManagementConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, AmazonSimpleSystemsManagementConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonSimpleSystemsManagementConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String,System.String)">ConfigureClient(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_System_String_Amazon_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String,System.String,Amazon.RegionEndpoint)">ConfigureClient(string, string, string, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_ConfigureClient_System_String_System_String_System_String_Amazon_SimpleSystemsManagement_AmazonSimpleSystemsManagementConfig_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.ConfigureClient(System.String,System.String,System.String,Amazon.SimpleSystemsManagement.AmazonSimpleSystemsManagementConfig)">ConfigureClient(string, string, string, AmazonSimpleSystemsManagementConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken, AmazonSimpleSystemsManagementConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonSimpleSystemsManagementConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_GetAsync_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.GetAsync*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_GetAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.GetAsync(System.String,AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration)">GetAsync(string, ParameterProviderConfiguration?)</h4>
+  <div class="markdown level1 summary"><p>Get parameter value for the provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;string?&gt; GetAsync(string key, ParameterProviderConfiguration? config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The parameter key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration.html">ParameterProviderConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The parameter provider configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>The parameter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetAsync(string, ParameterProviderConfiguration?)</a></div>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_GetMultipleAsync_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.GetMultipleAsync*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_GetMultipleAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.GetMultipleAsync(System.String,AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration)">GetMultipleAsync(string, ParameterProviderConfiguration?)</h4>
+  <div class="markdown level1 summary"><p>Get multiple parameter values for the provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;IDictionary&lt;string, string?&gt;&gt; GetMultipleAsync(string key, ParameterProviderConfiguration? config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The parameter key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration.html">ParameterProviderConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The parameter provider configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><p>Returns a collection parameter key/value pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetMultipleAsync(string, ParameterProviderConfiguration?)</a></div>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_NewConfigurationBuilder_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.NewConfigurationBuilder*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_NewConfigurationBuilder" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.NewConfigurationBuilder">NewConfigurationBuilder()</h4>
+  <div class="markdown level1 summary"><p>Creates and configures a new instance of SsmProviderConfigurationBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override SsmProviderConfigurationBuilder NewConfigurationBuilder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder.html">SsmProviderConfigurationBuilder</a></td>
+        <td><p>A new instance of SsmProviderConfigurationBuilder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider{AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder}.html#AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider{AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder}.NewConfigurationBuilder">ParameterProvider&lt;SsmProviderConfigurationBuilder&gt;.NewConfigurationBuilder()</a></div>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_Recursive_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.Recursive*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_Recursive" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.Recursive">Recursive()</h4>
+  <div class="markdown level1 summary"><p>Fetches all parameter values recursively based on a path prefix.
+For GetMultiple() only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SsmProviderConfigurationBuilder Recursive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder.html">SsmProviderConfigurationBuilder</a></td>
+        <td><p>The provider configuration builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_UseClient_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.UseClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_UseClient_Amazon_SimpleSystemsManagement_IAmazonSimpleSystemsManagement_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.UseClient(Amazon.SimpleSystemsManagement.IAmazonSimpleSystemsManagement)">UseClient(IAmazonSimpleSystemsManagement)</h4>
+  <div class="markdown level1 summary"><p>Use a custom client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISsmProvider UseClient(IAmazonSimpleSystemsManagement client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IAmazonSimpleSystemsManagement</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The custom client</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_WithDecryption_" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.WithDecryption*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_SimpleSystemsManagement_SsmProvider_WithDecryption" data-uid="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProvider.WithDecryption">WithDecryption()</h4>
+  <div class="markdown level1 summary"><p>Automatically decrypt the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SsmProviderConfigurationBuilder WithDecryption()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.SsmProviderConfigurationBuilder.html">SsmProviderConfigurationBuilder</a></td>
+        <td><p>The provider configuration builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.SimpleSystemsManagement.ISsmProvider.html">ISsmProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider-1.html">IParameterProvider&lt;TConfigurationBuilder&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider.html">IParameterProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Internal.Provider.IParameterProviderConfigurableClient-3.html">IParameterProviderConfigurableClient&lt;TProvider, TClient, TConfig&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_AddTransformer__1___0_System_String_AWS_Lambda_Powertools_Parameters_Transform_ITransformer_">ParameterProviderExtensions.AddTransformer&lt;TProvider&gt;(TProvider, string, ITransformer)</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_DefaultMaxAge__1___0_System_TimeSpan_">ParameterProviderExtensions.DefaultMaxAge&lt;TProvider&gt;(TProvider, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_RaiseTransformationError__1___0_">ParameterProviderExtensions.RaiseTransformationError&lt;TProvider&gt;(TProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_RaiseTransformationError__1___0_System_Boolean_">ParameterProviderExtensions.RaiseTransformationError&lt;TProvider&gt;(TProvider, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_UseCacheManager__1___0_AWS_Lambda_Powertools_Parameters_Cache_ICacheManager_">ParameterProviderExtensions.UseCacheManager&lt;TProvider&gt;(TProvider, ICacheManager)</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProviderExtensions.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProviderExtensions_UseTransformerManager__1___0_AWS_Lambda_Powertools_Parameters_Transform_ITransformerManager_">ParameterProviderExtensions.UseTransformerManager&lt;TProvider&gt;(TProvider, ITransformerManager)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AWS Lambda Powertools for .NET API Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
