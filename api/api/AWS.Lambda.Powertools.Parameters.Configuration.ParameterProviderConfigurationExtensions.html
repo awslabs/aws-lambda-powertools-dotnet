@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParameterProviderConfigurationExtensions
+   | AWS Lambda Powertools for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParameterProviderConfigurationExtensions
+   | AWS Lambda Powertools for .NET ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions" class="text-break">Class ParameterProviderConfigurationExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>ParameterProviderConfigurationExtensions class extensions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ParameterProviderConfigurationExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Parameters.Configuration.html">AWS.Lambda.Powertools.Parameters.Configuration</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Parameters.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ParameterProviderConfigurationExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_ForceFetch_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.ForceFetch*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_ForceFetch__1___0_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.ForceFetch``1(``0)">ForceFetch&lt;TConfigurationBuilder&gt;(TConfigurationBuilder)</h4>
+  <div class="markdown level1 summary"><p>Forces provider to fetch the latest value from the store regardless if already available in cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TConfigurationBuilder ForceFetch&lt;TConfigurationBuilder&gt;(this TConfigurationBuilder builder)
+    where TConfigurationBuilder : ParameterProviderConfigurationBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithMaxAge_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithMaxAge*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithMaxAge__1___0_TimeSpan_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithMaxAge``1(``0,TimeSpan)">WithMaxAge&lt;TConfigurationBuilder&gt;(TConfigurationBuilder, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Set the cache maximum age.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TConfigurationBuilder WithMaxAge&lt;TConfigurationBuilder&gt;(this TConfigurationBuilder builder, TimeSpan maxAge)
+    where TConfigurationBuilder : ParameterProviderConfigurationBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">maxAge</span></td>
+        <td><p>The maximum cache age</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation__1___0_AWS_Lambda_Powertools_Parameters_Transform_ITransformer_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation``1(``0,AWS.Lambda.Powertools.Parameters.Transform.ITransformer)">WithTransformation&lt;TConfigurationBuilder&gt;(TConfigurationBuilder, ITransformer)</h4>
+  <div class="markdown level1 summary"><p>Transforms the latest value from after retrieved from the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TConfigurationBuilder WithTransformation&lt;TConfigurationBuilder&gt;(this TConfigurationBuilder builder, ITransformer transformer)
+    where TConfigurationBuilder : ParameterProviderConfigurationBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Transform.ITransformer.html">ITransformer</a></td>
+        <td><span class="parametername">transformer</span></td>
+        <td><p>The instance of the transformer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation__1___0_AWS_Lambda_Powertools_Parameters_Transform_Transformation_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation``1(``0,AWS.Lambda.Powertools.Parameters.Transform.Transformation)">WithTransformation&lt;TConfigurationBuilder&gt;(TConfigurationBuilder, Transformation)</h4>
+  <div class="markdown level1 summary"><p>Transforms the latest value from after retrieved from the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TConfigurationBuilder WithTransformation&lt;TConfigurationBuilder&gt;(this TConfigurationBuilder builder, Transformation transformation)
+    where TConfigurationBuilder : ParameterProviderConfigurationBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Transform.Transformation.html">Transformation</a></td>
+        <td><span class="parametername">transformation</span></td>
+        <td><p>The transformation type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfigurationExtensions_WithTransformation__1___0_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfigurationExtensions.WithTransformation``1(``0,System.String)">WithTransformation&lt;TConfigurationBuilder&gt;(TConfigurationBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Transforms the latest value from after retrieved from the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TConfigurationBuilder WithTransformation&lt;TConfigurationBuilder&gt;(this TConfigurationBuilder builder, string transformerName)
+    where TConfigurationBuilder : ParameterProviderConfigurationBuilder</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transformerName</span></td>
+        <td><p>The name of the registered transformer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigurationBuilder</span></td>
+        <td><p>The configuration builder type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            AWS Lambda Powertools for .NET API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
