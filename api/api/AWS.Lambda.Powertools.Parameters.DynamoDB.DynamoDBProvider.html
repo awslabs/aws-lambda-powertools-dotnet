@@ -1,0 +1,1069 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamoDBProvider
+   | Powertools for AWS Lambda (.NET) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamoDBProvider
+   | Powertools for AWS Lambda (.NET) ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider" class="text-break">Class DynamoDBProvider
+  </h1>
+  <div class="markdown level0 summary"><p>Provider to retrieve parameter values from Amazon DynamoDB table.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html">ParameterProvider</a></div>
+    <div class="level2"><span class="xref">DynamoDBProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></div>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider.html">IParameterProvider</a></div>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Internal.Provider.IParameterProviderConfigurableClient-3.html">IParameterProviderConfigurableClient</a>&lt;<a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a>, <span class="xref">IAmazonDynamoDB</span>, <span class="xref">AmazonDynamoDBConfig</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Cache">ParameterProvider.Cache</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_CacheMode">ParameterProvider.CacheMode</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMaxAge_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetMaxAge(ParameterProviderConfiguration)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Get_System_String_">ParameterProvider.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync_System_String_">ParameterProvider.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_Get__1_System_String_">ParameterProvider.Get&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync__1_System_String_">ParameterProvider.GetAsync&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultiple_System_String_">ParameterProvider.GetMultiple(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync_System_String_">ParameterProvider.GetMultipleAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultiple__1_System_String_">ParameterProvider.GetMultiple&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync__1_System_String_">ParameterProvider.GetMultipleAsync&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_WithMaxAge_TimeSpan_">ParameterProvider.WithMaxAge(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_ForceFetch">ParameterProvider.ForceFetch()</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_WithTransformation_AWS_Lambda_Powertools_Parameters_Transform_Transformation_">ParameterProvider.WithTransformation(Transformation)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_WithTransformation_AWS_Lambda_Powertools_Parameters_Transform_ITransformer_">ParameterProvider.WithTransformation(ITransformer)</a>
+    </div>
+    <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_WithTransformation_System_String_">ParameterProvider.WithTransformation(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.html">AWS.Lambda.Powertools.Parameters.DynamoDB</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Parameters.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamoDBProvider : ParameterProvider, IDynamoDBProvider, IParameterProvider, IParameterProviderConfigurableClient&lt;IDynamoDBProvider, IAmazonDynamoDB, AmazonDynamoDBConfig&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_AmazonDynamoDBConfig_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(AmazonDynamoDBConfig)">ConfigureClient(AmazonDynamoDBConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with the credentials loaded from the application's default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(AmazonDynamoDBConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AmazonDynamoDBConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_AWSCredentials_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(AWSCredentials)">ConfigureClient(AWSCredentials)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(AWSCredentials credentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_AWSCredentials_AmazonDynamoDBConfig_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(AWSCredentials,AmazonDynamoDBConfig)">ConfigureClient(AWSCredentials, AmazonDynamoDBConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(AWSCredentials credentials, AmazonDynamoDBConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonDynamoDBConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_AWSCredentials_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(AWSCredentials,RegionEndpoint)">ConfigureClient(AWSCredentials, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS credentials.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(AWSCredentials credentials, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AWSCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>AWS credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(RegionEndpoint)">ConfigureClient(RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with the credentials loaded from the application's default configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String)">ConfigureClient(String, String)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_AmazonDynamoDBConfig_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String,AmazonDynamoDBConfig)">ConfigureClient(String, String, AmazonDynamoDBConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, AmazonDynamoDBConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonDynamoDBConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String,RegionEndpoint)">ConfigureClient(String, String, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String,System.String)">ConfigureClient(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_System_String_AmazonDynamoDBConfig_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String,System.String,AmazonDynamoDBConfig)">ConfigureClient(String, String, String, AmazonDynamoDBConfig)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key and a client configuration object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken, AmazonDynamoDBConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AmazonDynamoDBConfig</span></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The client configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_ConfigureClient_System_String_System_String_System_String_RegionEndpoint_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.ConfigureClient(System.String,System.String,System.String,RegionEndpoint)">ConfigureClient(String, String, String, RegionEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Configure client with AWS Access Key ID and AWS Secret Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider ConfigureClient(string awsAccessKeyId, string awsSecretAccessKey, string awsSessionToken, RegionEndpoint region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsAccessKeyId</span></td>
+        <td><p>AWS Access Key ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSecretAccessKey</span></td>
+        <td><p>AWS Secret Access Key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">awsSessionToken</span></td>
+        <td><p>AWS Session Token</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RegionEndpoint</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>The region to connect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_GetAsync_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.GetAsync*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_GetAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.GetAsync(System.String,AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration)">GetAsync(String, ParameterProviderConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Get parameter value for the provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;string?&gt; GetAsync(string key, ParameterProviderConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The parameter key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration.html">ParameterProviderConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The parameter provider configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>The parameter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetAsync(String, ParameterProviderConfiguration)</a></div>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_GetMultipleAsync_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.GetMultipleAsync*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_GetMultipleAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.GetMultipleAsync(System.String,AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration)">GetMultipleAsync(String, ParameterProviderConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Get multiple parameter values for the provided key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;IDictionary&lt;string, string?&gt;&gt; GetMultipleAsync(string key, ParameterProviderConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The parameter key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.Configuration.ParameterProviderConfiguration.html">ParameterProviderConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The parameter provider configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td><p>Returns a collection parameter key/value pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.ParameterProvider.html#AWS_Lambda_Powertools_Parameters_Provider_ParameterProvider_GetMultipleAsync_System_String_AWS_Lambda_Powertools_Parameters_Configuration_ParameterProviderConfiguration_">ParameterProvider.GetMultipleAsync(String, ParameterProviderConfiguration)</a></div>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseClient_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseClient*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseClient_IAmazonDynamoDB_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseClient(IAmazonDynamoDB)">UseClient(IAmazonDynamoDB)</h4>
+  <div class="markdown level1 summary"><p>Use a custom client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider UseClient(IAmazonDynamoDB client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IAmazonDynamoDB</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The custom client</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable(System.String)">UseTable(String)</h4>
+  <div class="markdown level1 summary"><p>Specify the DynamoDB table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider UseTable(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>DynamoDB table name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_System_String_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable(System.String,System.String,System.String)">UseTable(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Specify the DynamoDB table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider UseTable(string tableName, string primaryKeyAttribute, string valueAttribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>DynamoDB table name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">primaryKeyAttribute</span></td>
+        <td><p>The primary key attribute name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueAttribute</span></td>
+        <td><p>The value attribute name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable*"></a>
+  <h4 id="AWS_Lambda_Powertools_Parameters_DynamoDB_DynamoDBProvider_UseTable_System_String_System_String_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Parameters.DynamoDB.DynamoDBProvider.UseTable(System.String,System.String,System.String,System.String)">UseTable(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Specify the DynamoDB table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoDBProvider UseTable(string tableName, string primaryKeyAttribute, string sortKeyAttribute, string valueAttribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>DynamoDB table name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">primaryKeyAttribute</span></td>
+        <td><p>The primary key attribute name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sortKeyAttribute</span></td>
+        <td><p>The sort key attribute name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">valueAttribute</span></td>
+        <td><p>The value attribute name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a></td>
+        <td><p>Provider instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.DynamoDB.IDynamoDBProvider.html">IDynamoDBProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Provider.IParameterProvider.html">IParameterProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Parameters.Internal.Provider.IParameterProviderConfigurableClient-3.html">IParameterProviderConfigurableClient&lt;TProvider, TClient, TConfig&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Powertools for AWS Lambda (.NET) API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
