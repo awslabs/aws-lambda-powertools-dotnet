@@ -1,0 +1,1424 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Utility">
+      
+      
+        <meta name="author" content="Amazon Web Services">
+      
+      
+      
+        <link rel="prev" href="../parameters/">
+      
+      
+      <link rel="icon" href="../../media/aws-logo-light.svg">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
+    
+    
+      
+        <title>Idempotency - Powertools for AWS Lambda (.NET)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terminology" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../..">
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Powertools for AWS Lambda (.NET)" class="md-header__button md-logo" aria-label="Powertools for AWS Lambda (.NET)" data-md-component="logo">
+      
+  <img src="../../media/aws-logo-light.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Powertools for AWS Lambda (.NET)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Idempotency
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/aws-powertools/powertools-lambda-dotnet" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Powertools for AWS Lambda (.NET)" class="md-nav__button md-logo" aria-label="Powertools for AWS Lambda (.NET)" data-md-component="logo">
+      
+  <img src="../../media/aws-logo-light.svg" alt="logo">
+
+    </a>
+    Powertools for AWS Lambda (.NET)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/aws-powertools/powertools-lambda-dotnet" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Homepage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        References
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" target="_blank" class="md-nav__link">
+        API Reference
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../we_made_this/" class="md-nav__link">
+        We Made This (Community)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Core utilities
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Core utilities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/logging/" class="md-nav__link">
+        Logging
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../core/tracing/" class="md-nav__link">
+        Tracing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Utilities
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Utilities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parameters/" class="md-nav__link">
+        Parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Idempotency
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Idempotency
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    Terminology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    Key features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting started
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-resources" class="md-nav__link">
+    Required resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idempotent-attribute" class="md-nav__link">
+    Idempotent attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-payload-subset-for-idempotency" class="md-nav__link">
+    Choosing a payload subset for idempotency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-exceptions" class="md-nav__link">
+    Handling exceptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistence-stores" class="md-nav__link">
+    Persistence stores
+  </a>
+  
+    <nav class="md-nav" aria-label="Persistence stores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamodbpersistencestore" class="md-nav__link">
+    DynamoDBPersistenceStore
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    Advanced
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customizing-the-default-behavior" class="md-nav__link">
+    Customizing the default behavior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-concurrent-executions-with-the-same-payload" class="md-nav__link">
+    Handling concurrent executions with the same payload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-in-memory-cache" class="md-nav__link">
+    Using in-memory cache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expiring-idempotency-records" class="md-nav__link">
+    Expiring idempotency records
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payload-validation" class="md-nav__link">
+    Payload validation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#making-idempotency-key-required" class="md-nav__link">
+    Making idempotency key required
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-dynamodb-configuration" class="md-nav__link">
+    Customizing DynamoDB configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-a-dynamodb-table-with-a-composite-primary-key" class="md-nav__link">
+    Using a DynamoDB table with a composite primary key
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-your-code" class="md-nav__link">
+    Testing your code
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing your code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disabling-the-idempotency-utility" class="md-nav__link">
+    Disabling the idempotency utility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-resources" class="md-nav__link">
+    Extra resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Idempotency</h1>
+
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p><strong>This utility is currently in developer preview</strong> and is intended strictly for feedback and testing purposes <strong>and not for production workloads</strong>. The version and all future versions tagged with the <code>-preview</code> suffix should be treated as not stable. Until this utility is <a href="https://github.com/aws-powertools/powertools-lambda-dotnet/milestone/3">General Availability</a> we may introduce significant breaking changes and improvements in response to customers feedback.</p>
+</details>
+<!-- markdownlint-disable MD013 -->
+
+<p>The idempotency utility provides a simple solution to convert your Lambda functions into idempotent operations which are safe to retry.</p>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
+<p>The property of idempotency means that an operation does not cause additional side effects if it is called more than once with the same input parameters.</p>
+<p><strong>Idempotent operations will return the same result when they are called multiple times with the same parameters</strong>. This makes idempotent operations safe to retry. <a href="https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/">Read more</a> about idempotency.</p>
+<p><strong>Idempotency key</strong> is a hash representation of either the entire event or a specific configured subset of the event, and invocation results are <strong>JSON serialized</strong> and stored in your persistence storage layer.</p>
+<h2 id="key-features">Key features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Prevent Lambda handler function from executing more than once on the same event payload during a time window</li>
+<li>Ensure Lambda handler returns the same result when called with the same payload</li>
+<li>Select a subset of the event as the idempotency key using <a href="https://jmespath.org/">JMESPath</a> expressions</li>
+<li>Set a time window in which records with the same payload should be considered duplicates</li>
+</ul>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p>You should install with NuGet:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">Install-Package</span> <span class="n">AWS</span><span class="p">.</span><span class="n">Lambda</span><span class="p">.</span><span class="n">Powertools</span><span class="p">.</span><span class="n">Idempotency</span>
+</code></pre></div></td></tr></table></div>
+<p>Or via the .NET Core command line interface:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>dotnet<span class="w"> </span>add<span class="w"> </span>package<span class="w"> </span>AWS.Lambda.Powertools.Idempotency
+</code></pre></div></td></tr></table></div>
+<h3 id="required-resources">Required resources<a class="headerlink" href="#required-resources" title="Permanent link">&para;</a></h3>
+<p>Before getting started, you need to create a persistent storage layer where the idempotency utility can store its state - your Lambda functions will need read and write access to it.</p>
+<p>As of now, Amazon DynamoDB is the only supported persistent storage layer, so you'll need to create a table first.</p>
+<p><strong>Default table configuration</strong></p>
+<p>If you're not <a href="#dynamodbpersistencestore">changing the default configuration for the DynamoDB persistence layer</a>, this is the expected default configuration:</p>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Partition key</td>
+<td><code>id</code></td>
+<td></td>
+</tr>
+<tr>
+<td>TTL attribute name</td>
+<td><code>expiration</code></td>
+<td>This can only be configured after your table is created if you're using AWS Console</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip: You can share a single state table for all functions</p>
+<p>You can reuse the same DynamoDB table to store idempotency state. We add your function name in addition to the idempotency key as a hash key.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">template.yml</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">AWS Serverless Application Model (SAM) example</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">Resources</span><span class="p">:</span>
+<span class="nt">IdempotencyTable</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AWS::DynamoDB::Table</span>
+<span class="w">    </span><span class="nt">Properties</span><span class="p">:</span>
+<span class="hll"><span class="w">    </span><span class="nt">AttributeDefinitions</span><span class="p">:</span>
+</span><span class="hll"><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">AttributeName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">id</span>
+</span><span class="hll"><span class="w">        </span><span class="nt">AttributeType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">S</span>
+</span><span class="hll"><span class="w">    </span><span class="nt">KeySchema</span><span class="p">:</span>
+</span><span class="hll"><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">AttributeName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">id</span>
+</span><span class="hll"><span class="w">        </span><span class="nt">KeyType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HASH</span>
+</span><span class="hll"><span class="w">    </span><span class="nt">TimeToLiveSpecification</span><span class="p">:</span>
+</span><span class="hll"><span class="w">        </span><span class="nt">AttributeName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">expiration</span>
+</span><span class="hll"><span class="w">        </span><span class="nt">Enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span class="w">    </span><span class="nt">BillingMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PAY_PER_REQUEST</span>
+
+<span class="nt">IdempotencyFunction</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AWS::Serverless::Function</span>
+<span class="w">    </span><span class="nt">Properties</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">CodeUri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Function</span>
+<span class="w">    </span><span class="nt">Handler</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HelloWorld::HelloWorld.Function::FunctionHandler</span>
+<span class="hll"><span class="w">    </span><span class="nt">Policies</span><span class="p">:</span>
+</span><span class="hll"><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">DynamoDBCrudPolicy</span><span class="p">:</span>
+</span><span class="hll"><span class="w">            </span><span class="nt">TableName</span><span class="p">:</span><span class="w"> </span><span class="kt">!Ref</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IdempotencyTable</span>
+</span><span class="w">    </span><span class="nt">Environment</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">Variables</span><span class="p">:</span>
+<span class="hll"><span class="w">        </span><span class="nt">IDEMPOTENCY_TABLE</span><span class="p">:</span><span class="w"> </span><span class="kt">!Ref</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IdempotencyTable</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Large responses with DynamoDB persistence layer</p>
+<p>When using this utility with DynamoDB, your function's responses must be <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html#limits-items">smaller than 400KB</a>.
+Larger items cannot be written to DynamoDB and will cause exceptions.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info: DynamoDB</p>
+<p>Each function invocation will generally make 2 requests to DynamoDB. If the
+result returned by your Lambda is less than 1kb, you can expect 2 WCUs per invocation. For retried invocations, you will
+see 1WCU and 1RCU. Review the <a href="https://aws.amazon.com/dynamodb/pricing/">DynamoDB pricing documentation</a> to
+estimate the cost.</p>
+</div>
+<h3 id="idempotent-attribute">Idempotent attribute<a class="headerlink" href="#idempotent-attribute" title="Permanent link">&para;</a></h3>
+<p>You can quickly start by configuring <code>Idempotency</code> and using it with the <code>Idempotent</code> attribute on your Lambda function.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Initialization and configuration of the <code>Idempotency</code> must be performed outside the handler, preferably in the constructor.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Function</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Function</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">builder</span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="s">&quot;idempotency_table&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="na">[Idempotent]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Task</span><span class="p">.</span><span class="n">FromResult</span><span class="p">(</span><span class="n">input</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<h3 id="choosing-a-payload-subset-for-idempotency">Choosing a payload subset for idempotency<a class="headerlink" href="#choosing-a-payload-subset-for-idempotency" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip: Dealing with always changing payloads</p>
+<p>When dealing with an elaborate payload (API Gateway request for example), where parts of the payload always change, you should configure the <strong><code>EventKeyJmesPath</code></strong>.</p>
+</div>
+<p>Use <a href="#customizing-the-default-behavior"><code>IdempotencyConfig</code></a> to instruct the Idempotent annotation to only use a portion of your payload to verify whether a request is idempotent, and therefore it should not be retried.</p>
+<blockquote>
+<p><strong>Payment scenario</strong></p>
+</blockquote>
+<p>In this example, we have a Lambda handler that creates a payment for a user subscribing to a product. We want to ensure that we don't accidentally charge our customer by subscribing them more than once.</p>
+<p>Imagine the function executes successfully, but the client never receives the response due to a connection issue. It is safe to retry in this instance, as the idempotent decorator will return a previously saved response.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning: Idempotency for JSON payloads</p>
+<p>The payload extracted by the <code>EventKeyJmesPath</code> is treated as a string by default, so will be sensitive to differences in whitespace even when the JSON payload itself is identical.</p>
+<p>To alter this behaviour, you can use the JMESPath built-in function <code>powertools_json()</code> to treat the payload as a JSON object rather than a string.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">        </span><span class="n">builder</span>
+<span class="w">            </span><span class="p">.</span><span class="n">WithOptions</span><span class="p">(</span><span class="n">optionsBuilder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">                </span><span class="n">optionsBuilder</span><span class="p">.</span><span class="n">WithEventKeyJmesPath</span><span class="p">(</span><span class="s">&quot;powertools_json(Body).address&quot;</span><span class="p">))</span>
+<span class="w">            </span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="s">&quot;idempotency_table&quot;</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<h3 id="handling-exceptions">Handling exceptions<a class="headerlink" href="#handling-exceptions" title="Permanent link">&para;</a></h3>
+<p>If you are using the <code>Idempotent</code> attribute on your Lambda handler or any other method, any unhandled exceptions that are thrown during the code execution will cause <strong>the record in the persistence layer to be deleted</strong>.
+This means that new invocations will execute your code again despite having the same payload. If you don't want the record to be deleted, you need to catch exceptions within the idempotent function and return a successful response.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>We will throw an <code>IdempotencyPersistenceLayerException</code></strong> if any of the calls to the persistence layer fail unexpectedly.</p>
+<p>As this happens outside the scope of your decorated function, you are not able to catch it.</p>
+</div>
+<h3 id="persistence-stores">Persistence stores<a class="headerlink" href="#persistence-stores" title="Permanent link">&para;</a></h3>
+<h4 id="dynamodbpersistencestore">DynamoDBPersistenceStore<a class="headerlink" href="#dynamodbpersistencestore" title="Permanent link">&para;</a></h4>
+<p>This persistence store is built-in, and you can either use an existing DynamoDB table or create a new one dedicated for idempotency state (recommended).</p>
+<p>Use the builder to customize the table structure:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Customizing DynamoDBPersistenceStore to suit your table structure</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">new</span><span class="w"> </span><span class="nf">DynamoDBPersistenceStoreBuilder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithTableName</span><span class="p">(</span><span class="s">&quot;TABLE_NAME&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithKeyAttr</span><span class="p">(</span><span class="s">&quot;idempotency_key&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithExpiryAttr</span><span class="p">(</span><span class="s">&quot;expires_at&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithStatusAttr</span><span class="p">(</span><span class="s">&quot;current_status&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithDataAttr</span><span class="p">(</span><span class="s">&quot;result_data&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithValidationAttr</span><span class="p">(</span><span class="s">&quot;validation_key&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">Build</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div></p>
+<p>When using DynamoDB as a persistence layer, you can alter the attribute names by passing these parameters when initializing the persistence layer:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TableName</strong></td>
+<td>Y</td>
+<td></td>
+<td>Table name to store state</td>
+</tr>
+<tr>
+<td><strong>KeyAttr</strong></td>
+<td></td>
+<td><code>id</code></td>
+<td>Partition key of the table. Hashed representation of the payload (unless <strong>SortKeyAttr</strong> is specified)</td>
+</tr>
+<tr>
+<td><strong>ExpiryAttr</strong></td>
+<td></td>
+<td><code>expiration</code></td>
+<td>Unix timestamp of when record expires</td>
+</tr>
+<tr>
+<td><strong>StatusAttr</strong></td>
+<td></td>
+<td><code>status</code></td>
+<td>Stores status of the Lambda execution during and after invocation</td>
+</tr>
+<tr>
+<td><strong>DataAttr</strong></td>
+<td></td>
+<td><code>data</code></td>
+<td>Stores results of successfully idempotent methods</td>
+</tr>
+<tr>
+<td><strong>ValidationAttr</strong></td>
+<td></td>
+<td><code>validation</code></td>
+<td>Hashed representation of the parts of the event used for validation</td>
+</tr>
+<tr>
+<td><strong>SortKeyAttr</strong></td>
+<td></td>
+<td></td>
+<td>Sort key of the table (if table is configured with a sort key).</td>
+</tr>
+<tr>
+<td><strong>StaticPkValue</strong></td>
+<td></td>
+<td><code>idempotency#{LAMBDA_FUNCTION_NAME}</code></td>
+<td>Static value to use as the partition key. Only used when <strong>SortKeyAttr</strong> is set.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h2>
+<h3 id="customizing-the-default-behavior">Customizing the default behavior<a class="headerlink" href="#customizing-the-default-behavior" title="Permanent link">&para;</a></h3>
+<p>Idempotency behavior can be further configured with <strong><code>IdempotencyOptions</code></strong> using a builder:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">new</span><span class="w"> </span><span class="nf">IdempotencyOptionsBuilder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithEventKeyJmesPath</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithPayloadValidationJmesPath</span><span class="p">(</span><span class="s">&quot;paymentId&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithThrowOnNoIdempotencyKey</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithExpiration</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromMinutes</span><span class="p">(</span><span class="m">1</span><span class="p">))</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithUseLocalCache</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithHashFunction</span><span class="p">(</span><span class="s">&quot;MD5&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="n">Build</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<p>These are the available options for further configuration:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EventKeyJMESPath</strong></td>
+<td><code>""</code></td>
+<td>JMESPath expression to extract the idempotency key from the event record.</td>
+</tr>
+<tr>
+<td><strong>PayloadValidationJMESPath</strong></td>
+<td><code>""</code></td>
+<td>JMESPath expression to validate whether certain parameters have changed in the event</td>
+</tr>
+<tr>
+<td><strong>ThrowOnNoIdempotencyKey</strong></td>
+<td><code>False</code></td>
+<td>Throw exception if no idempotency key was found in the request</td>
+</tr>
+<tr>
+<td><strong>ExpirationInSeconds</strong></td>
+<td>3600</td>
+<td>The number of seconds to wait before a record is expired</td>
+</tr>
+<tr>
+<td><strong>UseLocalCache</strong></td>
+<td><code>false</code></td>
+<td>Whether to locally cache idempotency results (LRU cache)</td>
+</tr>
+<tr>
+<td><strong>HashFunction</strong></td>
+<td><code>MD5</code></td>
+<td>Algorithm to use for calculating hashes, as supported by <code>System.Security.Cryptography.HashAlgorithm</code> (eg. SHA1, SHA-256, ...)</td>
+</tr>
+</tbody>
+</table>
+<p>These features are detailed below.</p>
+<h3 id="handling-concurrent-executions-with-the-same-payload">Handling concurrent executions with the same payload<a class="headerlink" href="#handling-concurrent-executions-with-the-same-payload" title="Permanent link">&para;</a></h3>
+<p>This utility will throw an <strong><code>IdempotencyAlreadyInProgressException</code></strong> if we receive <strong>multiple invocations with the same payload while the first invocation hasn't completed yet</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you receive <code>IdempotencyAlreadyInProgressException</code>, you can safely retry the operation.</p>
+</div>
+<p>This is a locking mechanism for correctness. Since we don't know the result from the first invocation yet, we can't safely allow another concurrent execution.</p>
+<h3 id="using-in-memory-cache">Using in-memory cache<a class="headerlink" href="#using-in-memory-cache" title="Permanent link">&para;</a></h3>
+<p><strong>By default, in-memory local caching is disabled</strong>, to avoid using memory in an unpredictable way. </p>
+<div class="admonition warning memory configuration of your function">
+<p class="admonition-title">Warning</p>
+<p>Be sure to configure the Lambda memory according to the number of records and the potential size of each record.</p>
+</div>
+<p>You can enable it as seen before with:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Enable local cache</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="nf">IdempotencyOptionsBuilder</span><span class="p">()</span>
+<span class="w">        </span><span class="p">.</span><span class="n">WithUseLocalCache</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="n">Build</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+When enabled, we cache a maximum of 255 records in each Lambda execution environment</p>
+<div class="admonition note">
+<p class="admonition-title">Note: This in-memory cache is local to each Lambda execution environment</p>
+<p>This means it will be effective in cases where your function's concurrency is low in comparison to the number of "retry" invocations with the same payload, because cache might be empty.</p>
+</div>
+<h3 id="expiring-idempotency-records">Expiring idempotency records<a class="headerlink" href="#expiring-idempotency-records" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, we expire idempotency records after <strong>an hour</strong> (3600 seconds).</p>
+</div>
+<p>In most cases, it is not desirable to store the idempotency records forever. Rather, you want to guarantee that the same payload won't be executed within a period of time.</p>
+<p>You can change this window with the <strong><code>ExpirationInSeconds</code></strong> parameter:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Customizing expiration time</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">new</span><span class="w"> </span><span class="nf">IdempotencyOptionsBuilder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="n">WithExpiration</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromMinutes</span><span class="p">(</span><span class="m">5</span><span class="p">))</span>
+<span class="w">    </span><span class="p">.</span><span class="n">Build</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Records older than 5 minutes will be marked as expired, and the Lambda handler will be executed normally even if it is invoked with a matching payload.</p>
+<div class="admonition note">
+<p class="admonition-title">Note: DynamoDB time-to-live field</p>
+<p>This utility uses <strong><code>expiration</code></strong> as the TTL field in DynamoDB, as <a href="#required-resources">demonstrated in the SAM example earlier</a>.</p>
+</div>
+<h3 id="payload-validation">Payload validation<a class="headerlink" href="#payload-validation" title="Permanent link">&para;</a></h3>
+<div class="admonition question">
+<p class="admonition-title">Question: What if your function is invoked with the same payload except some outer parameters have changed?</p>
+<p>Example: A payment transaction for a given productID was requested twice for the same customer, <strong>however the amount to be paid has changed in the second transaction</strong>.</p>
+</div>
+<p>By default, we will return the same result as it returned before, however in this instance it may be misleading; we provide a fail fast payload validation to address this edge case.</p>
+<p>With <strong><code>PayloadValidationJMESPath</code></strong>, you can provide an additional JMESPath expression to specify which part of the event body should be validated against previous idempotent invocations</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Function.cs</label><label for="__tabbed_2_2">Example Event 1</label><label for="__tabbed_2_3">Example Event 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">        </span><span class="n">builder</span>
+<span class="w">            </span><span class="p">.</span><span class="n">WithOptions</span><span class="p">(</span><span class="n">optionsBuilder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">                </span><span class="n">optionsBuilder</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">WithEventKeyJmesPath</span><span class="p">(</span><span class="s">&quot;[userDetail, productId]&quot;</span><span class="p">)</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">WithPayloadValidationJmesPath</span><span class="p">(</span><span class="s">&quot;amount&quot;</span><span class="p">))</span>
+<span class="w">            </span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="s">&quot;TABLE_NAME&quot;</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;userDetail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;User1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;user_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;productId&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1500</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;charge_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subscription&quot;</span><span class="p">,</span>
+<span class="hll"><span class="w">    </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span>
+</span><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;userDetail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;User1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;user_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user@example.com&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;productId&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1500</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;charge_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subscription&quot;</span><span class="p">,</span>
+<span class="hll"><span class="w">    </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<p>In this example, the <strong><code>userDetail</code></strong> and <strong><code>productId</code></strong> keys are used as the payload to generate the idempotency key, as per <strong><code>EventKeyJMESPath</code></strong> parameter.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If we try to send the same request but with a different amount, we will raise <strong><code>IdempotencyValidationException</code></strong>.</p>
+</div>
+<p>Without payload validation, we would have returned the same result as we did for the initial request. Since we're also returning an amount in the response, this could be quite confusing for the client.</p>
+<p>By using <strong><code>withPayloadValidationJMESPath("amount")</code></strong>, we prevent this potentially confusing behavior and instead throw an Exception.</p>
+<h3 id="making-idempotency-key-required">Making idempotency key required<a class="headerlink" href="#making-idempotency-key-required" title="Permanent link">&para;</a></h3>
+<p>If you want to enforce that an idempotency key is required, you can set <strong><code>ThrowOnNoIdempotencyKey</code></strong> to <code>True</code>.</p>
+<p>This means that we will throw <strong><code>IdempotencyKeyException</code></strong> if the evaluation of <strong><code>EventKeyJMESPath</code></strong> is <code>null</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Function.cs</label><label for="__tabbed_3_2">Success Event</label><label for="__tabbed_3_3">Failure Event</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="nf">App</span><span class="p">()</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">        </span><span class="n">builder</span>
+<span class="w">            </span><span class="p">.</span><span class="n">WithOptions</span><span class="p">(</span><span class="n">optionsBuilder</span><span class="w"> </span><span class="o">=&gt;</span>
+<span class="w">                </span><span class="n">optionsBuilder</span>
+<span class="w">                    </span><span class="c1">// Requires &quot;user&quot;.&quot;uid&quot; and &quot;orderId&quot; to be present</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">WithEventKeyJmesPath</span><span class="p">(</span><span class="s">&quot;[user.uid, orderId]&quot;</span><span class="p">)</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">WithThrowOnNoIdempotencyKey</span><span class="p">(</span><span class="k">true</span><span class="p">))</span>
+<span class="w">            </span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="s">&quot;TABLE_NAME&quot;</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="na">[Idempotent]</span>
+<span class="k">public</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="n">OrderResult</span><span class="o">&gt;</span><span class="w"> </span><span class="n">FunctionHandler</span><span class="p">(</span><span class="n">Order</span><span class="w"> </span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">ILambdaContext</span><span class="w"> </span><span class="n">context</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BB0D045C-8878-40C8-889E-38B3CB0A61B1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Foo&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;orderId&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p>Notice that <code>orderId</code> is now accidentally within <code>user</code> key</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DE0D000E-1234-10D1-991E-EAC1DD1D52C8&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Joe Bloggs&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;orderId&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h3 id="customizing-dynamodb-configuration">Customizing DynamoDB configuration<a class="headerlink" href="#customizing-dynamodb-configuration" title="Permanent link">&para;</a></h3>
+<p>When creating the <code>DynamoDBPersistenceStore</code>, you can set a custom <a href="https://docs.aws.amazon.com/sdkfornet1/latest/apidocs/html/T_Amazon_DynamoDB_AmazonDynamoDBClient.htm"><code>AmazonDynamoDBClient</code></a> if you need to customize the configuration:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Custom AmazonDynamoDBClient</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="nf">Function</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">AmazonDynamoDBClient</span><span class="w"> </span><span class="n">customClient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AmazonDynamoDBClient</span><span class="p">(</span><span class="n">RegionEndpoint</span><span class="p">.</span><span class="n">APSouth1</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>
+<span class="w">        </span><span class="n">builder</span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="n">storeBuilder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>
+<span class="w">            </span><span class="n">storeBuilder</span><span class="p">.</span>
+<span class="w">                </span><span class="n">WithTableName</span><span class="p">(</span><span class="s">&quot;TABLE_NAME&quot;</span><span class="p">)</span>
+<span class="w">                </span><span class="p">.</span><span class="n">WithDynamoDBClient</span><span class="p">(</span><span class="n">customClient</span><span class="p">)</span>
+<span class="w">        </span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h3 id="using-a-dynamodb-table-with-a-composite-primary-key">Using a DynamoDB table with a composite primary key<a class="headerlink" href="#using-a-dynamodb-table-with-a-composite-primary-key" title="Permanent link">&para;</a></h3>
+<p>When using a composite primary key table (hash+range key), use <code>SortKeyAttr</code> parameter when initializing your persistence store.</p>
+<p>With this setting, we will save the idempotency key in the sort key instead of the primary key. By default, the primary key will now be set to <code>idempotency#{LAMBDA_FUNCTION_NAME}</code>.</p>
+<p>You can optionally set a static value for the partition key using the <code>StaticPkValue</code> parameter.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Reusing a DynamoDB table that uses a composite primary key</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Idempotency</span><span class="p">.</span><span class="n">Configure</span><span class="p">(</span><span class="n">builder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">builder</span><span class="p">.</span><span class="n">UseDynamoDb</span><span class="p">(</span><span class="n">storeBuilder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>
+<span class="w">        </span><span class="n">storeBuilder</span><span class="p">.</span>
+<span class="w">            </span><span class="n">WithTableName</span><span class="p">(</span><span class="s">&quot;TABLE_NAME&quot;</span><span class="p">)</span>
+<span class="w">            </span><span class="p">.</span><span class="n">WithSortKeyAttr</span><span class="p">(</span><span class="s">&quot;sort_key&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+<p>Data would then be stored in DynamoDB like this:</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>sort_key</th>
+<th>expiration</th>
+<th>status</th>
+<th>data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>idempotency#MyLambdaFunction</td>
+<td>1e956ef7da78d0cb890be999aecc0c9e</td>
+<td>1636549553</td>
+<td>COMPLETED</td>
+<td>{"id": 12391, "message": "success"}</td>
+</tr>
+<tr>
+<td>idempotency#MyLambdaFunction</td>
+<td>2b2cdb5f86361e97b4383087c1ffdf27</td>
+<td>1636549571</td>
+<td>COMPLETED</td>
+<td>{"id": 527212, "message": "success"}</td>
+</tr>
+<tr>
+<td>idempotency#MyLambdaFunction</td>
+<td>f091d2527ad1c78f05d54cc3f363be80</td>
+<td>1636549585</td>
+<td>IN_PROGRESS</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="testing-your-code">Testing your code<a class="headerlink" href="#testing-your-code" title="Permanent link">&para;</a></h2>
+<p>The idempotency utility provides several routes to test your code.</p>
+<h3 id="disabling-the-idempotency-utility">Disabling the idempotency utility<a class="headerlink" href="#disabling-the-idempotency-utility" title="Permanent link">&para;</a></h3>
+<p>When testing your code, you may wish to disable the idempotency logic altogether and focus on testing your business logic. To do this, you can set the environment variable <code>POWERTOOLS_IDEMPOTENCY_DISABLED</code> to true. </p>
+<h2 id="extra-resources">Extra resources<a class="headerlink" href="#extra-resources" title="Permanent link">&para;</a></h2>
+<p>If you're interested in a deep dive on how Amazon uses idempotency when building our APIs, check out
+<a href="https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/">this article</a>.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-06-20
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Amazon Web Services
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.sections", "navigation.expand", "navigation.top", "navigation.instant", "navigation.indexes", "navigation.tracking", "content.code.annotate", "toc.follow", "toc.integrate", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a51614de.min.js"></script>
+      
+        
+          <script src="../../javascript/aws-amplify.min.js"></script>
+        
+      
+        
+          <script src="../../javascript/extra.js"></script>
+        
+      
+    
+  </body>
+</html>
