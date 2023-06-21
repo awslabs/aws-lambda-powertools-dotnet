@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataRecord
+   | Powertools for AWS Lambda (.NET) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataRecord
+   | Powertools for AWS Lambda (.NET) ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord" class="text-break">Class DataRecord
+  </h1>
+  <div class="markdown level0 summary"><p>Data Class for idempotency records. This is actually the item that will be stored in the persistence layer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DataRecord</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.html">AWS.Lambda.Powertools.Idempotency.Persistence</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Idempotency.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataRecord : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord__ctor_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.#ctor*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord__ctor_System_String_AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_DataRecordStatus_System_Int64_System_String_System_String_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.#ctor(System.String,AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.DataRecordStatus,System.Int64,System.String,System.String)">DataRecord(String, DataRecord.DataRecordStatus, Int64, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new DataRecord</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataRecord(string idempotencyKey, DataRecord.DataRecordStatus status, long expiryTimestamp, string responseData, string payloadHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idempotencyKey</span></td>
+        <td><p>Hash representation of either entire event or specific configured subject of the event</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.DataRecordStatus.html">DataRecord.DataRecordStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The DataRecordStatus</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">expiryTimestamp</span></td>
+        <td><p>Unix timestamp of when record expires</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">responseData</span></td>
+        <td><p>JSON serialized invocation results</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">payloadHash</span></td>
+        <td><p>A hash representation of the entire event</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_ExpiryTimestamp_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.ExpiryTimestamp*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_ExpiryTimestamp" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.ExpiryTimestamp">ExpiryTimestamp</h4>
+  <div class="markdown level1 summary"><p>Unix timestamp of when record expires</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ExpiryTimestamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_IdempotencyKey_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.IdempotencyKey*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_IdempotencyKey" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.IdempotencyKey">IdempotencyKey</h4>
+  <div class="markdown level1 summary"><p>A hash representation of either the entire event or a specific configured subset of the event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IdempotencyKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_PayloadHash_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.PayloadHash*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_PayloadHash" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.PayloadHash">PayloadHash</h4>
+  <div class="markdown level1 summary"><p>A hash representation of the entire event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PayloadHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_ResponseData_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.ResponseData*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_ResponseData" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.ResponseData">ResponseData</h4>
+  <div class="markdown level1 summary"><p>JSON serialized invocation results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResponseData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_Status_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.Status*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_Status" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Represents the <a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.DataRecordStatus.html">DataRecord.DataRecordStatus</a> Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataRecord.DataRecordStatus Status { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.DataRecordStatus.html">DataRecord.DataRecordStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_Equals_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.Equals*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_Equals_System_Object_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_GetHashCode_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.GetHashCode*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_GetHashCode" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_IsExpired_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.IsExpired*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_IsExpired_DateTimeOffset_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.IsExpired(DateTimeOffset)">IsExpired(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Check if data record is expired (based on expiration configured in the IdempotencyConfig</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExpired(DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the record is currently expired or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Powertools for AWS Lambda (.NET) API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
