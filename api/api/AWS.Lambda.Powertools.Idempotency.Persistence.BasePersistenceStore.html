@@ -1,0 +1,622 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BasePersistenceStore
+   | Powertools for AWS Lambda (.NET) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BasePersistenceStore
+   | Powertools for AWS Lambda (.NET) ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/img.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore">
+  
+  
+  <h1 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore" class="text-break">Class BasePersistenceStore
+  </h1>
+  <div class="markdown level0 summary"><p>Persistence layer that will store the idempotency result.
+Base implementation. See <a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DynamoDBPersistenceStore.html">DynamoDBPersistenceStore</a> for an implementation (default one)
+Extend this class to use your own implementation (DocumentDB, ElastiCache, ...)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BasePersistenceStore</span></div>
+      <div class="level2"><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DynamoDBPersistenceStore.html">DynamoDBPersistenceStore</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.IPersistenceStore.html">IPersistenceStore</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.html">AWS.Lambda.Powertools.Idempotency.Persistence</a></h6>
+  <h6><strong>Assembly</strong>: AWS.Lambda.Powertools.Idempotency.dll</h6>
+  <h5 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BasePersistenceStore : object, IPersistenceStore</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_PayloadValidationEnabled" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.PayloadValidationEnabled">PayloadValidationEnabled</h4>
+  <div class="markdown level1 summary"><p>Boolean to indicate whether or not payload validation is enabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool PayloadValidationEnabled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_Configure_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.Configure*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_Configure_AWS_Lambda_Powertools_Idempotency_IdempotencyOptions_System_String_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.Configure(AWS.Lambda.Powertools.Idempotency.IdempotencyOptions,System.String)">Configure(IdempotencyOptions, String)</h4>
+  <div class="markdown level1 summary"><p>Initialize the base persistence layer from the configuration settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(IdempotencyOptions idempotencyOptions, string functionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.IdempotencyOptions.html">IdempotencyOptions</a></td>
+        <td><span class="parametername">idempotencyOptions</span></td>
+        <td><p>Idempotency configuration settings</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">functionName</span></td>
+        <td><p>The name of the function being decorated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_DeleteRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.DeleteRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_DeleteRecord_JsonDocument_Exception_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.DeleteRecord(JsonDocument,Exception)">DeleteRecord(JsonDocument, Exception)</h4>
+  <div class="markdown level1 summary"><p>Delete record from the persistence store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteRecord(JsonDocument data, Exception throwable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonDocument</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Payload</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">throwable</span></td>
+        <td><p>The throwable thrown by the function</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_DeleteRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.DeleteRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_DeleteRecord_System_String_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.DeleteRecord(System.String)">DeleteRecord(String)</h4>
+  <div class="markdown level1 summary"><p>Remove item from persistence store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task DeleteRecord(string idempotencyKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idempotencyKey</span></td>
+        <td><p>idempotencyKey the key of the record</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_GetRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.GetRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_GetRecord_JsonDocument_DateTimeOffset_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.GetRecord(JsonDocument,DateTimeOffset)">GetRecord(JsonDocument, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Retrieve idempotency key for data provided, fetch from persistence store, and convert to DataRecord.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;DataRecord&gt; GetRecord(JsonDocument data, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonDocument</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Payload</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.html">DataRecord</a>&gt;</td>
+        <td><p>DataRecord representation of existing record found in persistence store</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_GetRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.GetRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_GetRecord_System_String_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.GetRecord(System.String)">GetRecord(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieve item from persistence store using idempotency key and return it as a DataRecord instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;DataRecord&gt; GetRecord(string idempotencyKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idempotencyKey</span></td>
+        <td><p>idempotencyKey the key of the record</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.html">DataRecord</a>&gt;</td>
+        <td><p>DataRecord representation of existing record found in persistence store</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Exceptions.IdempotencyItemNotFoundException.html">IdempotencyItemNotFoundException</a></td>
+        <td><p>Exception thrown if no record exists in persistence store with the idempotency key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_PutRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.PutRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_PutRecord_AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_DateTimeOffset_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.PutRecord(AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord,DateTimeOffset)">PutRecord(DataRecord, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Add a DataRecord to persistence store if it does not already exist with that key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task PutRecord(DataRecord record, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.html">DataRecord</a></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>record DataRecord instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Exceptions.IdempotencyItemAlreadyExistsException.html">IdempotencyItemAlreadyExistsException</a></td>
+        <td><p>if a non-expired entry already exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_SaveInProgress_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.SaveInProgress*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_SaveInProgress_JsonDocument_DateTimeOffset_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.SaveInProgress(JsonDocument,DateTimeOffset)">SaveInProgress(JsonDocument, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Save record of function's execution being in progress</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SaveInProgress(JsonDocument data, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonDocument</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Payload</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">now</span></td>
+        <td><p>The current date time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Exceptions.IdempotencyItemAlreadyExistsException.html">IdempotencyItemAlreadyExistsException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_SaveSuccess_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.SaveSuccess*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_SaveSuccess_JsonDocument_System_Object_DateTimeOffset_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.SaveSuccess(JsonDocument,System.Object,DateTimeOffset)">SaveSuccess(JsonDocument, Object, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Save record of function's execution completing successfully</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task SaveSuccess(JsonDocument data, object result, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonDocument</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Payload</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>the response from the function</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="parametername">now</span></td>
+        <td><p>The current date time</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_UpdateRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.UpdateRecord*"></a>
+  <h4 id="AWS_Lambda_Powertools_Idempotency_Persistence_BasePersistenceStore_UpdateRecord_AWS_Lambda_Powertools_Idempotency_Persistence_DataRecord_" data-uid="AWS.Lambda.Powertools.Idempotency.Persistence.BasePersistenceStore.UpdateRecord(AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord)">UpdateRecord(DataRecord)</h4>
+  <div class="markdown level1 summary"><p>Update item in persistence store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task UpdateRecord(DataRecord record)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.DataRecord.html">DataRecord</a></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>DataRecord instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AWS.Lambda.Powertools.Idempotency.Persistence.IPersistenceStore.html">IPersistenceStore</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Powertools for AWS Lambda (.NET) API Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
